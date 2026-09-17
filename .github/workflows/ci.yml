@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Build and test
+        run: mvn -B -ntp clean verify
+      - name: Test packaged distribution
+        shell: pwsh
+        run: ./scripts/smoke.ps1
+      - name: Test Unix launcher
+        if: runner.os == 'Linux'
+        run: sh bin/flowtrail.sh run examples/hello.json --json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: flowtrail-${{ runner.os }}
+          path: target/flowtrail-dist.zip
+          if-no-files-found: error

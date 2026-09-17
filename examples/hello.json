@@ -1,0 +1,7 @@
+{
+  "name": "hello-flowtrail",
+  "steps": [
+    { "id": "greeting", "type": "text", "text": "你好，FlowTrail！" },
+    { "id": "summary", "type": "text", "text": "上一阶段输出：${greeting.output}" }
+  ]
+}
