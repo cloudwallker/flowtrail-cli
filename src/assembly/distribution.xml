@@ -20,10 +20,6 @@
       <outputDirectory>licenses</outputDirectory>
     </fileSet>
     <fileSet>
-      <directory>docs</directory>
-      <outputDirectory>docs</outputDirectory>
-    </fileSet>
-    <fileSet>
       <directory>.</directory>
       <outputDirectory>/</outputDirectory>
       <includes>
