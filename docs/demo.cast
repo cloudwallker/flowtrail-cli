@@ -1,0 +1,11 @@
+{"version": 2, "width": 100, "height": 30, "timestamp": 1789529454, "env": {"TERM": "xterm-256color"}, "title": "FlowTrail CLI v0.1.0"}
+[0.0, "o", "$ java -jar target/flowtrail.jar --help\r\n"]
+[0.407, "o", "Usage: flowtrail [-hV] [COMMAND]\r\nRun small, repeatable tasks from your terminal.\r\n  -h, --help      Show this help message and exit.\r\n  -V, --version   Print version information and exit.\r\nCommands:\r\n  init      Create an offline example without overwriting files.\r\n  validate  Validate a task without executing it.\r\n  run       Validate and run steps in order; stop on the first failure.\r\n  doctor    Check Java and the working directory.\r\n"]
+[0.407, "o", "$ java -jar target/flowtrail.jar doctor\r\n"]
+[0.75, "o", "Java 21+: OK\r\nWorking directory writable: OK\r\n"]
+[0.75, "o", "$ java -jar target/flowtrail.jar validate examples/hello.json\r\n"]
+[1.172, "o", "Valid: hello-flowtrail (2 steps)\r\n"]
+[1.172, "o", "$ java -jar target/flowtrail.jar run examples/hello.json\r\n"]
+[1.782, "o", "[greeting] 你好，FlowTrail！\r\n[summary] 上一阶段输出：你好，FlowTrail！\r\nCompleted 2 steps.\r\n"]
+[1.782, "o", "$ java -jar target/flowtrail.jar run examples/hello.json --json\r\n"]
+[2.422, "o", "{\"ok\":true,\"name\":\"hello-flowtrail\",\"steps\":[{\"id\":\"greeting\",\"output\":\"你好，FlowTrail！\"},{\"id\":\"summary\",\"output\":\"上一阶段输出：你好，FlowTrail！\"}]}\r\n"]
