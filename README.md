@@ -1,14 +1,18 @@
 # FlowTrail CLI
 
-**中文简介：** 基于 Java 21 的轻量命令行任务编排工具，通过 JSON 定义文本处理与 HTTP 步骤，支持顺序执行、步骤间结果传递、定义校验和结构化 JSON 输出。内置离线示例，无需账号或数据库。
+### Repeatable text and HTTP tasks from a JSON file
 
-**English:** A Java 21 command-line task runner that executes JSON-defined text and HTTP steps in sequence and passes outputs between steps. Includes validation, structured JSON output, and an offline demo; no account or database is required.
+**Describe a sequence once, validate it before execution, and pass each step's output to the next. Run from the terminal with readable progress or structured JSON results.**
 
-Windows 可双击根目录 `start.bat`：自动查找 Java 21+。通过菜单运行离线示例、环境诊断或查看帮助。缺少 JAR 时会提示先构建；启动失败保留错误信息。`start.bat -Check` 仅检查启动环境。
+**把文本处理与 HTTP 调用写成 JSON，先校验再按顺序执行，并将步骤输出传给后续步骤。在终端查看执行过程，也可输出结构化 JSON 结果。**
 
-用 Java 21 构建的轻量命令行任务编排工具。把重复的文本处理和 HTTP 调用写成 JSON，在终端中按顺序执行，并将前一步输出传给下一步。
+The default demo runs offline without an account, model key, or database. A local mock service is included for the HTTP example.
 
 **无需账号、模型密钥或数据库。** 默认示例离线运行，HTTP 示例提供本地模拟服务。
+
+[Quick start / 快速开始](#快速开始) · [Commands / 命令](#四个命令) · [Task definitions / 定义任务](#定义任务)
+
+Windows 可双击根目录 `start.bat`：自动查找 Java 21+。通过菜单运行离线示例、环境诊断或查看帮助。缺少 JAR 时会提示先构建；启动失败保留错误信息。`start.bat -Check` 仅检查启动环境。
 
 ```text
 $ flowtrail run examples/hello.json
