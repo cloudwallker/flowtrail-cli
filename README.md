@@ -14,6 +14,8 @@ The default demo runs offline without an account, model key, or database. A loca
 
 Windows 可双击根目录 `start.bat`：自动查找 Java 21+。通过菜单运行离线示例、环境诊断或查看帮助。缺少 JAR 时会提示先构建；启动失败保留错误信息。`start.bat -Check` 仅检查启动环境。
 
+![flowtrail-cli](docs/images/cartoon-infographic.png)
+
 ```text
 $ flowtrail run examples/hello.json
 [greeting] 你好，FlowTrail！
