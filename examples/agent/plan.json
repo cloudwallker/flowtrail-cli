@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "tasks": [
+    {"id":"controller","goal":"分析 Controller 入参校验","dependsOn":[],"tools":["read_file"],"expectedOutput":"带来源的 Controller 分析","requiredTools":["read_file"],"script":"examples/agent/controller.json"},
+    {"id":"service","goal":"分析 Service 幂等处理","dependsOn":[],"tools":["read_file"],"expectedOutput":"带来源的 Service 分析","requiredTools":["read_file"],"script":"examples/agent/service.json"},
+    {"id":"summary","goal":"汇总：${controller.output}\n${service.output}","dependsOn":["controller","service"],"tools":[],"expectedOutput":"修改建议","script":"examples/agent/review.json"}
+  ]
+}

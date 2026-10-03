@@ -1,0 +1,1 @@
+{"name":"demo","transport":"stdio","command":["java","-cp","target/flowtrail.jar","examples/McpDemoServer.java"]}

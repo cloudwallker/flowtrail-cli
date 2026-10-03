@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-03",
+  "timezone": "Asia/Shanghai",
+  "version": "0.2.0",
+  "baselineCommit": "c29e744",
+  "sourceState": "local-working-tree",
+  "jdk": "21.0.1",
+  "maven": "3.9.9",
+  "sourceFileCount": 61,
+  "sourceSha256": "ddee656953bc5dfa678d640df68280badff0114e19a9363568904e25dd276450",
+  "jar": "flowtrail.jar",
+  "jarSha256": "0c72a9a7263959e05f5d842c987c32f76c3f685e5a5210a86cc66c601962b337",
+  "junit": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "testSuites": [
+    {
+      "name": "dev.flowtrail.AgentBoundaryTest",
+      "tests": 5
+    },
+    {
+      "name": "dev.flowtrail.AgentCommandsTest",
+      "tests": 9
+    },
+    {
+      "name": "dev.flowtrail.FlowTrailTest",
+      "tests": 30
+    },
+    {
+      "name": "dev.flowtrail.McpCancellationTest",
+      "tests": 1
+    },
+    {
+      "name": "dev.flowtrail.McpCommandsTest",
+      "tests": 2
+    },
+    {
+      "name": "dev.flowtrail.McpSchemaTest",
+      "tests": 1
+    },
+    {
+      "name": "dev.flowtrail.PlanCommandsTest",
+      "tests": 4
+    },
+    {
+      "name": "dev.flowtrail.PlanRunnerTest",
+      "tests": 2
+    },
+    {
+      "name": "dev.flowtrail.ProviderProtocolTest",
+      "tests": 4
+    },
+    {
+      "name": "dev.flowtrail.storage.CodeIndexSecurityTest",
+      "tests": 4
+    },
+    {
+      "name": "dev.flowtrail.storage.CodeIndexTest",
+      "tests": 5
+    },
+    {
+      "name": "dev.flowtrail.storage.ContextCompressorTest",
+      "tests": 2
+    },
+    {
+      "name": "dev.flowtrail.storage.EmbeddingProtocolTest",
+      "tests": 2
+    },
+    {
+      "name": "dev.flowtrail.storage.MemoryStoreTest",
+      "tests": 2
+    },
+    {
+      "name": "dev.flowtrail.storage.RetrievalEvaluationTest",
+      "tests": 1
+    },
+    {
+      "name": "dev.flowtrail.storage.StorageCommandsTest",
+      "tests": 1
+    }
+  ]
+}

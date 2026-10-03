@@ -14,11 +14,12 @@
     <fileSet>
       <directory>examples</directory>
       <outputDirectory>examples</outputDirectory>
-      <includes>
-        <include>hello.json</include>
-        <include>http.json</include>
-        <include>MockServer.java</include>
-      </includes>
+      <excludes><exclude>**/.flowtrail/**</exclude><exclude>**/target/**</exclude></excludes>
+    </fileSet>
+    <fileSet>
+      <directory>scripts</directory>
+      <outputDirectory>scripts</outputDirectory>
+      <excludes><exclude>__pycache__/**</exclude><exclude>*.pyc</exclude></excludes>
     </fileSet>
     <fileSet>
       <directory>licenses</directory>
@@ -27,19 +28,15 @@
     <fileSet>
       <directory>docs</directory>
       <outputDirectory>docs</outputDirectory>
-      <includes>
-        <include>demo.cast</include>
-        <include>design.md</include>
-        <include>learning-notes.md</include>
-      </includes>
     </fileSet>
     <fileSet>
       <directory>.</directory>
       <outputDirectory>/</outputDirectory>
       <includes>
-        <include>start.bat</include><include>README.md</include>
+        <include>start.bat</include><include>README.md</include><include>README_ZH.md</include>
         <include>LICENSE</include>
         <include>THIRD_PARTY_NOTICES.md</include>
+        <include>CHANGELOG.md</include>
       </includes>
     </fileSet>
   </fileSets>

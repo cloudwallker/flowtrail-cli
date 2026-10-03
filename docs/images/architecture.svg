@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640" role="img" aria-labelledby="title desc">
+  <title id="title">FlowTrail CLI implementation architecture</title>
+  <desc id="desc">CLI goals and validated Plan DAG tasks use AgentLoop. Model responses pass schema and execution-policy checks before built-in or MCP tools run. Results return to the loop. SQLite memory and JavaParser code retrieval supply project context.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#5d7794"/></marker>
+  </defs>
+  <rect width="1120" height="640" rx="20" fill="#f4f7fb"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="42" y="48" font-size="27" font-weight="700" fill="#172e49">FlowTrail CLI</text>
+    <text x="42" y="77" font-size="16" fill="#52657a">Implementation architecture · Java 21 · Version 0.2.0</text>
+    <rect x="40" y="120" width="210" height="102" rx="12" fill="#fff" stroke="#c7d4e2"/>
+    <text x="58" y="153" font-size="19" font-weight="700" fill="#172e49">Goal or Plan</text>
+    <text x="58" y="182" font-size="15" fill="#52657a">agent GOAL</text>
+    <text x="58" y="205" font-size="15" fill="#52657a">plan FILE / --generate-goal</text>
+    <rect x="292" y="120" width="250" height="102" rx="12" fill="#e8f1ff" stroke="#91b2da"/>
+    <text x="312" y="153" font-size="20" font-weight="700" fill="#173d6d">AgentLoop</text>
+    <text x="312" y="183" font-size="15" fill="#35597f">Model request → tool calls</text>
+    <text x="312" y="206" font-size="15" fill="#35597f">Rounds, budget and deadlines</text>
+    <rect x="584" y="120" width="230" height="102" rx="12" fill="#fff4df" stroke="#dec18d"/>
+    <text x="602" y="153" font-size="19" font-weight="700" fill="#715022">Execution gate</text>
+    <text x="602" y="183" font-size="15" fill="#715022">Schema + ExecutionPolicy</text>
+    <text x="602" y="206" font-size="15" fill="#715022">ToolRegistry dispatch</text>
+    <rect x="856" y="120" width="224" height="226" rx="12" fill="#e9f5ef" stroke="#92bfaa"/>
+    <text x="874" y="153" font-size="20" font-weight="700" fill="#255b43">Tools</text>
+    <text x="874" y="184" font-size="15" fill="#345f4d">read_file · list_files</text>
+    <text x="874" y="209" font-size="15" fill="#345f4d">search_code · apply_patch</text>
+    <text x="874" y="234" font-size="15" fill="#345f4d">run_command</text>
+    <path d="M874 252H1062" stroke="#b4d5c5"/>
+    <text x="874" y="279" font-size="17" font-weight="700" fill="#255b43">MCP clients</text>
+    <text x="874" y="306" font-size="15" fill="#345f4d">stdio / Streamable HTTP</text>
+    <text x="874" y="330" font-size="15" fill="#345f4d">Named tools + approval gate</text>
+    <g fill="none" stroke="#5d7794" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M250 171H288"/><path d="M542 171H580"/><path d="M814 171H852"/>
+      <path d="M968 346V377H557V235H417V226"/>
+    </g>
+    <text x="577" y="367" font-size="15" fill="#52657a">Tool results → next model request</text>
+    <rect x="292" y="254" width="250" height="86" rx="12" fill="#fff" stroke="#c7d4e2"/>
+    <text x="312" y="285" font-size="17" font-weight="700" fill="#172e49">ModelProvider</text>
+    <text x="312" y="310" font-size="15" fill="#52657a">OpenAI SSE · Ollama NDJSON</text>
+    <text x="312" y="331" font-size="15" fill="#52657a">Scripted mock for demos</text>
+    <path d="M417 254V226" fill="none" stroke="#5d7794" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="40" y="414" width="320" height="156" rx="12" fill="#fff" stroke="#c7d4e2"/>
+    <text x="59" y="447" font-size="19" font-weight="700" fill="#172e49">Plan DAG</text>
+    <text x="59" y="475" font-size="15" fill="#52657a">Planner validates dependencies</text>
+    <text x="59" y="500" font-size="15" fill="#52657a">Read Workers parallel; writes serial</text>
+    <text x="59" y="525" font-size="15" fill="#52657a">Reviewer checks tools and exit codes</text>
+    <text x="59" y="550" font-size="15" fill="#52657a">Bounded repair; completed writes kept</text>
+    <rect x="400" y="414" width="320" height="156" rx="12" fill="#fff" stroke="#c7d4e2"/>
+    <text x="419" y="447" font-size="19" font-weight="700" fill="#172e49">Context + Memory</text>
+    <text x="419" y="475" font-size="15" fill="#52657a">Tool-call / result pairs stay together</text>
+    <text x="419" y="500" font-size="15" fill="#52657a">SQLite project facts and sessions</text>
+    <text x="419" y="525" font-size="15" fill="#52657a">Explicit recall supplies context</text>
+    <text x="419" y="550" font-size="15" fill="#52657a">Local audit records status and timing</text>
+    <rect x="760" y="414" width="320" height="156" rx="12" fill="#fff" stroke="#c7d4e2"/>
+    <text x="779" y="447" font-size="19" font-weight="700" fill="#172e49">Code Retrieval</text>
+    <text x="779" y="475" font-size="15" fill="#52657a">JavaParser symbols and line ranges</text>
+    <text x="779" y="500" font-size="15" fill="#52657a">Hash updates + SQLite index</text>
+    <text x="779" y="525" font-size="15" fill="#52657a">Keyword / vector / hybrid search</text>
+    <text x="779" y="550" font-size="15" fill="#52657a">Source, stale and degradation flags</text>
+    <text x="42" y="611" font-size="15" fill="#52657a">Project paths, explicit write approval and exact command allowlists are checked before execution.</text>
+  </g>
+</svg>

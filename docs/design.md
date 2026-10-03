@@ -1,5 +1,7 @@
 # FlowTrail CLI v0.1 设计
 
+本文保留 0.1 的顺序任务设计；0.2 的 Agent、Plan 和 MCP 见 [实现说明](agent-implementation.md)，记忆与检索见 [存储说明](storage-implementation.md)。
+
 目标：用 Java 21 构建独立的顺序任务 CLI，克隆后无需账号、数据库或外部服务即可演示。
 
 - `init [FILE]` 生成任务，默认 flow.json，不覆盖已有文件。

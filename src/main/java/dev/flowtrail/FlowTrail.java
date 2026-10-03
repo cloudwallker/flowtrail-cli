@@ -1,5 +1,6 @@
 package dev.flowtrail;
 
+import dev.flowtrail.command.AgentCommands;
 import dev.flowtrail.command.Commands;
 import dev.flowtrail.output.Reporter;
 import java.io.PrintWriter;
@@ -10,13 +11,19 @@ import picocli.CommandLine.Command;
 @Command(
     name = "flowtrail",
     mixinStandardHelpOptions = true,
-    version = "FlowTrail 0.1.0",
-    description = "Run small, repeatable tasks from your terminal.",
+    version = "FlowTrail 0.2.0",
+    description = "A bounded coding Agent, code search and repeatable task runner.",
     subcommands = {
       Commands.Init.class,
       Commands.Validate.class,
       Commands.Run.class,
-      Commands.Doctor.class
+      Commands.Doctor.class,
+      AgentCommands.Agent.class,
+      AgentCommands.Plan.class,
+      AgentCommands.Mcp.class,
+      dev.flowtrail.command.StorageCommands.Memory.class,
+      dev.flowtrail.command.StorageCommands.Index.class,
+      dev.flowtrail.command.StorageCommands.Search.class
     })
 public final class FlowTrail {
   private FlowTrail() {}

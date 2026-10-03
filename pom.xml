@@ -3,15 +3,26 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.flowtrail</groupId>
   <artifactId>flowtrail-cli</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <name>FlowTrail CLI</name>
-  <description>A small sequential task runner for the terminal.</description>
+  <description>A Java Coding Agent with project memory, code retrieval, plans, tools and repeatable tasks.</description>
   <properties>
     <maven.compiler.release>21</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <flowtrail.buildDirectory>target</flowtrail.buildDirectory>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.xerial</groupId>
+      <artifactId>sqlite-jdbc</artifactId>
+      <version>3.47.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.javaparser</groupId>
+      <artifactId>javaparser-core</artifactId>
+      <version>3.26.3</version>
+    </dependency>
     <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli</artifactId>
@@ -30,6 +41,7 @@
     </dependency>
   </dependencies>
   <build>
+    <directory>${flowtrail.buildDirectory}</directory>
     <finalName>flowtrail</finalName>
     <resources>
       <resource>

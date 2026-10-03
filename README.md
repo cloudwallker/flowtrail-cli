@@ -1,67 +1,100 @@
 # FlowTrail CLI
 
-### Repeatable text and HTTP tasks from a JSON file
+### A Java coding agent for local codebases
 
-**Describe a sequence once, validate it before execution, and pass each step's output to the next. Run from the terminal with readable progress or structured JSON results.**
+**Search code, call tools, and execute bounded task plans from your terminal.** Project memory, execution policies, and two MCP transports provide traceable results and repeatable demonstrations alongside a deterministic JSON task runner.
 
-**把文本处理与 HTTP 调用写成 JSON，先校验再按顺序执行，并将步骤输出传给后续步骤。在终端查看执行过程，也可输出结构化 JSON 结果。**
+English | [中文](README_ZH.md)
 
-The default demo runs offline without an account, model key, or database. A local mock service is included for the HTTP example.
+[Quick Start](#quick-start) · [Commands](#commands) · [Agent Demo](#agent-and-codebase-demo) · [Verification](#verification) · [Changelog](CHANGELOG.md)
 
-**无需账号、模型密钥或数据库。** 默认示例离线运行，HTTP 示例提供本地模拟服务。
+![FlowTrail CLI implementation architecture: agent loop, execution policies, tools, plans, memory and code retrieval](docs/images/architecture.svg)
 
-[Quick start / 快速开始](#快速开始) · [Commands / 命令](#四个命令) · [Task definitions / 定义任务](#定义任务)
+*Implementation architecture. Model responses pass argument and permission checks before tools run; plans, project memory, and code retrieval share the execution path.*
 
-Windows 可双击根目录 `start.bat`：自动查找 Java 21+。通过菜单运行离线示例、环境诊断或查看帮助。缺少 JAR 时会提示先构建；启动失败保留错误信息。`start.bat -Check` 仅检查启动环境。
+## Features
 
-![flowtrail-cli](docs/images/cartoon-infographic.png)
+- **Coding agent:** OpenAI SSE, Ollama NDJSON, and scripted mock providers; validated tool calls, bounded rounds, deadlines, and context budgets.
+- **Task plans:** validated DAGs, parallel read-only Workers, serial write Workers, evidence-based review, and bounded repair that preserves completed writes.
+- **Project context:** SQLite facts and sessions, paired tool-call compression, JavaParser chunks, incremental indexing, and keyword/vector/hybrid retrieval with source locations.
+- **MCP tools:** stdio and Streamable HTTP clients with namespaced discovery, schema checks, explicit approval, cancellation, and resource cleanup.
+- **Repeatable tasks:** the original `run` command validates and executes JSON text/HTTP steps in order, with stable JSON output and exit codes.
 
-```text
-$ flowtrail run examples/hello.json
-[greeting] 你好，FlowTrail！
-[summary] 上一阶段输出：你好，FlowTrail！
-Completed 2 steps.
-```
+## Quick Start
 
-## 快速开始
+Building from source requires **JDK 21+ and Maven 3.8.5+**. Check that both `java -version` and `mvn -version` use a suitable JDK; set `JAVA_HOME` when needed.
 
-源码构建需要 JDK 21+ 和 Maven 3.8.5+。请先确认 `java -version` 与 `mvn -version` 都指向 JDK 21 或更新版本；可通过 `JAVA_HOME` 指定 JDK。
-
-在仓库根目录执行：
+From the repository root:
 
 ```sh
-mvn clean package
+mvn clean verify
 java -jar target/flowtrail.jar --help
 java -jar target/flowtrail.jar doctor
 java -jar target/flowtrail.jar run examples/hello.json
 ```
 
-也可使用启动脚本：
+Expected task output:
+
+```text
+[greeting] 你好，FlowTrail！
+[summary] 上一阶段输出：你好，FlowTrail！
+Completed 2 steps.
+```
+
+On Windows, double-click `start.bat` to find Java 21+, run an offline example, check the environment, or view help. The launcher retains startup errors and asks you to build if the JAR is missing. `start.bat -Check` only checks the environment.
+
+The build creates `target/flowtrail-dist.zip`. Extract it and use the included launchers with JDK 21+; Maven is only needed for the source build. You can also run `java -jar lib/flowtrail.jar --help` from the extracted directory.
 
 ```powershell
-# Windows PowerShell
+# Windows PowerShell, in the source repository
 .\bin\flowtrail.ps1 run examples/hello.json --json
 ```
 
 ```sh
-# Linux / macOS
+# Linux / macOS, in the source repository
 sh bin/flowtrail.sh run examples/hello.json --json
 ```
 
-构建同时生成 `target/flowtrail-dist.zip`。解压后可直接使用其中的 `bin/` 启动器，只需 JDK 21+，无需 Maven。也可以 `java -jar lib/flowtrail.jar --help`。
+## Commands
 
-## 四个命令
-
-| 命令 | 用途 |
+| Command | Purpose |
 | --- | --- |
-| `init [FILE]` | 创建离线示例，默认写入 `flow.json`，拒绝覆盖已有文件 |
-| `validate FILE` | 校验定义、步骤 ID、参数和引用，不发送请求 |
-| `run FILE` | 校验完整定义后顺序执行，任一步失败立即停止 |
-| `doctor` | 检查当前 Java 版本和工作目录可写性 |
+| `init [FILE]` | Create an offline example; defaults to `flow.json` and refuses to overwrite a file |
+| `validate FILE` | Validate a task, step IDs, arguments, and references without sending requests |
+| `run FILE` | Validate the complete task, execute steps sequentially, and stop on failure |
+| `doctor` | Check the Java version and working-directory permissions |
+| `agent GOAL` | Request a model, validate calls, check policies, execute tools, and return results to the model |
+| `plan [FILE]` | Run a validated Plan DAG with bounded concurrency, evidence review, and repair |
+| `index` | Build Java/text chunks, update file hashes, and store embeddings in SQLite |
+| `search QUERY` | Retrieve source locations with keyword, vector, or hybrid search and stale/degradation flags |
+| `memory save/list/recall/delete` | Manage project facts and their sources |
+| `mcp CONFIG` | Initialize, discover, or call tools in a service namespace |
 
-每个子命令都支持 `--help` 与 `--json`，版本信息使用 `flowtrail --version`。`--json` 放在子命令后面。
+Subcommands support `--help` and `--json`; put `--json` after the subcommand. Use `flowtrail --version` for the version. Help and version output are always text.
 
-## 定义任务
+## Agent and Codebase Demo
+
+The included codebase demonstrates order handling and idempotent refunds. These commands use explicit mock model responses and offline hash embeddings while running the actual file tools, index, scheduler, and SQLite storage:
+
+```sh
+java -jar target/flowtrail.jar index --project examples/codebase --json
+java -jar target/flowtrail.jar search "refundOrder requestKey" --project examples/codebase --json
+java -jar target/flowtrail.jar agent "分析退款入口与幂等实现" --project examples/codebase --provider mock --script examples/agent/read-and-search.json --session refund-review --json
+java -jar target/flowtrail.jar plan examples/agent/plan.json --project examples/codebase --provider mock --parallelism 2 --json
+java -jar target/flowtrail.jar memory save "退款以 requestKey 复用结果" --project examples/codebase --source src/demo/OrderService.java --json
+java -jar target/flowtrail.jar memory recall "退款" --project examples/codebase --json
+java -jar target/flowtrail.jar mcp examples/agent/mcp-stdio.json --json
+```
+
+Select a model adapter with `--provider openai` or `--provider ollama`, then specify `--model` and `--base-url` as appropriate. Credentials come from environment variables. Embedding adapters support OpenAI, Ollama, and offline hash vectors; provider failures never silently switch to mock.
+
+Built-in tools are `read_file`, `list_files`, `search_code`, `apply_patch`, and `run_command`. Project paths and resolved symlink targets share a protection policy, including indexing and old-cache queries. File writes require `--allow-write`; remote calls require `--allow-remote`; commands must exactly match a user-supplied program/argument allowlist. `apply_patch` previews a diff and requires a unique text match. Audit records omit complete arguments and file contents.
+
+Context compression keeps tool calls and results together and uses a conservative input-budget estimate. SQLite persists project facts, sessions, index versions, and source metadata. Plan Workers reuse `AgentLoop`; the Reviewer checks successful tool traces and actual command exit codes. Completed write tasks retain their results during repair and are not automatically replayed.
+
+See [Agent / Plan / MCP](docs/agent-implementation.md), [Memory and Code Retrieval](docs/storage-implementation.md), and [Capabilities and Evidence](docs/resume-evidence.md) for implementation details and further examples.
+
+## Define a Deterministic Task
 
 ```json
 {
@@ -73,15 +106,14 @@ sh bin/flowtrail.sh run examples/hello.json --json
 }
 ```
 
-- `name` 为非空字符串，`steps` 为非空数组；文件大小不超过 1 MiB。
-- 步骤 ID 必须唯一，以 ASCII 字母开头，随后仅允许字母、数字和下划线。
-- `text` 步骤需要字符串 `text`。
-- `${stepId.output}` 只能引用前面步骤的输出，可用于 `text`、HTTP `url`、`body` 和请求头值。
-- 插值只进行一次；输出中包含 `${...}` 不会作为表达式再次执行。
-- HTTP 输出是 UTF-8 解码后的原始响应正文；首版不支持 JSONPath 或自动 URL 编码。
-- 未知字段、前向引用、错误字段类型和重复 JSON 属性均报错。
+- `name` must be a nonempty string and `steps` a nonempty array; the definition is limited to 1 MiB.
+- Step IDs must be unique, begin with an ASCII letter, and contain only letters, digits, and underscores.
+- A `text` step requires a string `text`. `${stepId.output}` can only reference an earlier step, in text, HTTP URLs, bodies, or header values.
+- Interpolation happens once; expression-like text returned by a step is not evaluated again.
+- HTTP output is the raw response body decoded as UTF-8, without JSONPath or automatic URL encoding.
+- Unknown fields, forward references, invalid types, and duplicate JSON properties are rejected.
 
-HTTP 步骤示例：
+An HTTP step:
 
 ```json
 {
@@ -95,83 +127,84 @@ HTTP 步骤示例：
 }
 ```
 
-`method` 默认 `GET`，仅支持 `GET` 和 `POST`；GET 不允许 `body`。超时默认 10 秒，范围 1–300 秒，覆盖响应正文读取。非 2xx 状态报错，不自动重试或跟随重定向。
+`method` defaults to `GET`; only GET and POST are supported, and GET cannot have a body. The timeout defaults to 10 seconds, accepts 1–300 seconds, and covers reading the response body. Non-2xx responses fail; the runner does not automatically retry or follow redirects.
 
-地址仅支持 HTTP/HTTPS，禁止内嵌用户名、密码与 URL fragment。含引用的地址在执行时再次检查最终结果；`validate` 对动态地址只检查引用是否合法。请求头名称不区分大小写，不允许重复或设置由客户端管理的 `Host`、`Content-Length` 等头。
+URLs must use HTTP/HTTPS, without embedded credentials or fragments. Interpolated URLs are checked again at execution; `validate` checks their references. Header names are case-insensitive; duplicate names and client-managed headers such as `Host` or `Content-Length` are rejected.
 
-任务文件是可执行操作的描述。请只运行自己信任的定义；HTTP 步骤可以访问本机网络，POST 也可能改变目标服务状态。响应正文会保留在内存中，首版面向小型文本 API，不用于大文件下载。程序不打印请求头或失败响应正文，但成功的任务输出仍可能包含敏感内容。
+Run trusted definitions: HTTP steps can access local networks, and POST can change service state. Responses stay in memory, so these tasks target small text APIs. Request headers and failed response bodies are not printed; successful outputs can still contain sensitive data.
 
-## 本地 HTTP 演示
+## Local HTTP Demo
 
-终端一启动模拟服务，只监听 `127.0.0.1`：
+Start the loopback-only service in one terminal:
 
 ```sh
 java --source 21 examples/MockServer.java
 ```
 
-终端二运行：
+Run in another terminal:
 
 ```sh
 java -jar target/flowtrail.jar validate examples/http.json
 java -jar target/flowtrail.jar run examples/http.json
 ```
 
-模拟服务会将 POST 正文原样返回，最后一步输出 `HTTP response: Hello from FlowTrail`。按 Ctrl+C 停止服务。端口 8099 被占用时，可给模拟服务传入其他端口，并同步修改示例 URL。
+The service echoes the POST body; the final step prints `HTTP response: Hello from FlowTrail`. Stop it with Ctrl+C. If port 8099 is occupied, pass another port to the service and update the example URL.
 
-## 输出和退出码
+## Output and Exit Codes
 
-普通模式逐步打印结果。`--json` 模式成功时 stdout 只有一个 JSON 文档：
+Text mode prints each completed step. In `--json` mode, successful stdout contains one JSON document:
 
 ```json
 {"ok":true,"name":"greeting","steps":[{"id":"first","output":"Hello"},{"id":"second","output":"Hello, FlowTrail!"}]}
 ```
 
-失败时 stdout 为空，stderr 输出一个错误对象，已执行步骤的输出不会混入 JSON：
+On failure, stdout stays empty and stderr contains one error object; partial step output is not mixed into it:
 
 ```json
 {"ok":false,"exitCode":2,"error":"References must point to an earlier step's output."}
 ```
 
-| 退出码 | 含义 |
+| Exit code | Meaning |
 | --- | --- |
-| 0 | 成功 |
-| 1 | 文件 I/O、网络、超时或 HTTP 状态失败 |
-| 2 | 参数或任务定义无效 |
-| 130 | 执行线程中断 |
+| 0 | Success |
+| 1 | File I/O, network, timeout, or HTTP status failure |
+| 2 | Invalid arguments or task definition |
+| 130 | Execution-thread interruption |
 
-帮助和版本始终输出文本。操作系统直接终止进程时，不保证输出 JSON 错误。
+If the operating system terminates the process directly, JSON error output is not guaranteed.
 
-## 设计与学习重点
+## Documentation and Scope
 
-```mermaid
-flowchart LR
-  CLI[命令与参数] --> Loader[JSON 解析与全量校验]
-  Loader --> Runner[顺序执行器]
-  Runner --> Text[文本与引用替换]
-  Runner --> HTTP[JDK HTTP Client]
-  Text --> Result[结果与退出码]
-  HTTP --> Result
-```
+| Topic | Documentation |
+| --- | --- |
+| Agent loop, execution policies, Plan roles, and MCP | [Agent Implementation](docs/agent-implementation.md) |
+| Memory, context compression, JavaParser indexing, and retrieval | [Storage Implementation](docs/storage-implementation.md) |
+| Source entry points and reproducible demonstrations | [Capabilities and Evidence](docs/resume-evidence.md) |
+| Local checks and test results | [0.2 Verification](docs/verification-0.2.md) |
+| Recorded retrieval measurements | [Benchmark Data](docs/benchmarks/) |
+| Original task-runner design and learning notes | [Design](docs/design.md) · [Learning Notes](docs/learning-notes.md) |
+| Original terminal recording | [asciicast v2 Recording](docs/demo.cast) |
 
-- **CLI 设计**：picocli 子命令、帮助、stdout/stderr 分离与退出码。
-- **Java 工程化**：record 建模、职责拆分、Maven 构建与可执行 JAR。
-- **网络编程**：本地 HTTP 调用、总超时、异步取消与资源释放。
-- **执行边界**：先校验后执行，错误时保持输出和退出码一致。
+The original `run` remains sequential; `plan` manages a separate DAG. Retrieval uses in-process cosine scoring and targets local, small codebases. MCP support focuses on tools. Execution policies are application constraints, rather than an operating-system sandbox; there is no plugin marketplace.
 
-见 [设计说明](docs/design.md)、[实现复盘](docs/learning-notes.md) 和 [实际终端演示记录](docs/demo.cast)。演示为 asciicast v2 格式，可用 asciinema 播放；无需播放工具也能按快速开始复现。初始版本在 AI 编程助手协助下实现；后续学习可围绕独立复现、修改和解释设计展开。
+The initial version was implemented with assistance from an AI coding assistant. Repository contents and verification records describe the actual implementation; learning can continue through independent reproduction, changes, and explaining the design.
 
-首版不包含并行 DAG、Shell 执行、重试、插件市场或 AI 调用。适合下一阶段扩展的主题是：响应大小限制、JSON 结果选择、可配置重试策略。
-
-## 构建与演示检查
+## Verification
 
 ```sh
-mvn clean package
-java -jar target/flowtrail.jar validate examples/hello.json
-java -jar target/flowtrail.jar run examples/hello.json
+mvn clean verify
+python scripts/agent_smoke.py
 ```
 
-HTTP 示例可按上文启动本地模拟服务后运行；不依赖公网 API。
+```powershell
+# Check the extracted distribution and launchers
+.\scripts\smoke.ps1
+```
 
-## 许可
+Automated tests use temporary directories and random ports, without public API dependencies. The [0.2 verification report](docs/verification-0.2.md) records 75 passing tests and seven feature demonstration groups.
 
-本项目代码使用 [MIT](LICENSE)。运行时依赖的许可与署名信息见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 和 `licenses/`。
+[Retrieval measurements](docs/benchmarks/) cover 1,000 and 5,000 chunks with 50 automatically labelled identifier questions, using explicit mock-hash embeddings. Reports include the model, phase timings, and per-question results. These measurements describe that fixed synthetic task.
+
+## License
+
+Project code is licensed under [MIT](LICENSE). Runtime dependency licenses and attribution are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [licenses/](licenses/).

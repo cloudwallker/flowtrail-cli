@@ -1,0 +1,4975 @@
+{
+  "generatedAt" : "2026-10-02T14:52:24.158853100Z",
+  "java" : "21.0.1",
+  "os" : "Windows 11 amd64",
+  "availableProcessors" : 2,
+  "maxHeapBytes" : 536870912,
+  "model" : "mock-hash-v1",
+  "dimensions" : 96,
+  "chunkVersion" : "javaparser-lines-v1",
+  "mock" : true,
+  "timingScope" : "In-process search. First-pass is not a JVM/OS cold-start benchmark. Vector stage includes SQLite reads, freshness checks and cosine scoring.",
+  "build" : {
+    "scannedFiles" : 500,
+    "updatedFiles" : 500,
+    "unchangedFiles" : 0,
+    "deletedFiles" : 0,
+    "chunks" : 1000,
+    "failures" : [ ],
+    "elapsedNanos" : 15707281600,
+    "embeddingModel" : "mock-hash-v1",
+    "mock" : true
+  },
+  "unchangedUpdate" : {
+    "scannedFiles" : 500,
+    "updatedFiles" : 0,
+    "unchangedFiles" : 500,
+    "deletedFiles" : 0,
+    "chunks" : 1000,
+    "failures" : [ ],
+    "elapsedNanos" : 285796600,
+    "embeddingModel" : "mock-hash-v1",
+    "mock" : true
+  },
+  "questionCount" : 50,
+  "summaries" : [ {
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "count" : 50,
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 0.0529,
+      "p95Millis" : 0.1129
+    },
+    "vector" : {
+      "p50Millis" : 326.9857,
+      "p95Millis" : 381.5979
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 1.2345,
+      "p95Millis" : 2.9921
+    },
+    "total" : {
+      "p50Millis" : 329.8703,
+      "p95Millis" : 392.9936
+    }
+  }, {
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "count" : 50,
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 0.0277,
+      "p95Millis" : 0.0635
+    },
+    "vector" : {
+      "p50Millis" : 293.2821,
+      "p95Millis" : 378.3479
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 0.5079,
+      "p95Millis" : 0.9807
+    },
+    "total" : {
+      "p50Millis" : 295.4563,
+      "p95Millis" : 381.2529
+    }
+  }, {
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "count" : 50,
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 1.0E-4,
+      "p95Millis" : 6.0E-4
+    },
+    "vector" : {
+      "p50Millis" : 280.6215,
+      "p95Millis" : 354.6005
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 0.6,
+      "p95Millis" : 1.0445
+    },
+    "total" : {
+      "p50Millis" : 282.2605,
+      "p95Millis" : 356.6696
+    }
+  }, {
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "count" : 50,
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 1.0E-4,
+      "p95Millis" : 2.0E-4
+    },
+    "vector" : {
+      "p50Millis" : 259.3329,
+      "p95Millis" : 289.9687
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 0.3809,
+      "p95Millis" : 0.5391
+    },
+    "total" : {
+      "p50Millis" : 261.2534,
+      "p95Millis" : 291.6994
+    }
+  }, {
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "count" : 50,
+    "recallAt5" : 0.72,
+    "mrrAt5" : 0.36033333333333334,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 0.0254,
+      "p95Millis" : 0.0456
+    },
+    "vector" : {
+      "p50Millis" : 274.3393,
+      "p95Millis" : 318.0938
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 0.6355,
+      "p95Millis" : 1.0284
+    },
+    "total" : {
+      "p50Millis" : 276.5786,
+      "p95Millis" : 320.9274
+    }
+  }, {
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "count" : 50,
+    "recallAt5" : 0.72,
+    "mrrAt5" : 0.36033333333333334,
+    "degradedCount" : 0,
+    "embedding" : {
+      "p50Millis" : 0.0286,
+      "p95Millis" : 0.0572
+    },
+    "vector" : {
+      "p50Millis" : 295.6852,
+      "p95Millis" : 394.2594
+    },
+    "keywordAndFusion" : {
+      "p50Millis" : 0.517,
+      "p95Millis" : 0.8418
+    },
+    "total" : {
+      "p50Millis" : 298.2988,
+      "p95Millis" : 396.2184
+    }
+  } ],
+  "samples" : [ {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 103800,
+      "vectorNanos" : 381597900,
+      "keywordAndFusionNanos" : 18004700,
+      "totalNanos" : 402839000
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 112900,
+      "vectorNanos" : 340990900,
+      "keywordAndFusionNanos" : 2844700,
+      "totalNanos" : 346152400
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 71900,
+      "vectorNanos" : 365875400,
+      "keywordAndFusionNanos" : 2992100,
+      "totalNanos" : 371252000
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 54700,
+      "vectorNanos" : 353534100,
+      "keywordAndFusionNanos" : 1960800,
+      "totalNanos" : 357331600
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 60700,
+      "vectorNanos" : 334204500,
+      "keywordAndFusionNanos" : 1883000,
+      "totalNanos" : 337613900
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0035.java", "src/Item0002.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 51500,
+      "vectorNanos" : 350161100,
+      "keywordAndFusionNanos" : 1709800,
+      "totalNanos" : 353502900
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 59600,
+      "vectorNanos" : 363385500,
+      "keywordAndFusionNanos" : 3559200,
+      "totalNanos" : 368876200
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0049.java", "src/Item0016.java", "src/Item0115.java", "src/Item0148.java", "src/Item0214.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 271800,
+      "vectorNanos" : 354117300,
+      "keywordAndFusionNanos" : 2094700,
+      "totalNanos" : 359222900
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0056.java", "src/Item0023.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 72000,
+      "vectorNanos" : 322904600,
+      "keywordAndFusionNanos" : 1796600,
+      "totalNanos" : 326918400
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0063.java", "src/Item0030.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 89800,
+      "vectorNanos" : 330720300,
+      "keywordAndFusionNanos" : 1367100,
+      "totalNanos" : 335970500
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0034.java", "src/Item0067.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 105800,
+      "vectorNanos" : 348808200,
+      "keywordAndFusionNanos" : 1580600,
+      "totalNanos" : 352204400
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0077.java", "src/Item0011.java", "src/Item0044.java", "src/Item0110.java", "src/Item0143.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 58300,
+      "vectorNanos" : 334185400,
+      "keywordAndFusionNanos" : 1341400,
+      "totalNanos" : 337477500
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0084.java", "src/Item0051.java", "src/Item0150.java", "src/Item0183.java", "src/Item0282.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 116900,
+      "vectorNanos" : 332450900,
+      "keywordAndFusionNanos" : 1401800,
+      "totalNanos" : 336311700
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0091.java", "src/Item0190.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 45300,
+      "vectorNanos" : 316757600,
+      "keywordAndFusionNanos" : 1160700,
+      "totalNanos" : 319670200
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0098.java", "src/Item0032.java", "src/Item0065.java", "src/Item0131.java", "src/Item0164.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 51100,
+      "vectorNanos" : 316360700,
+      "keywordAndFusionNanos" : 1453300,
+      "totalNanos" : 319348200
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0105.java", "src/Item0006.java", "src/Item0039.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 101000,
+      "vectorNanos" : 421272400,
+      "keywordAndFusionNanos" : 1310000,
+      "totalNanos" : 424446000
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0112.java", "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0145.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 75000,
+      "vectorNanos" : 331391800,
+      "keywordAndFusionNanos" : 1336800,
+      "totalNanos" : 334455900
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0218.java", "src/Item0317.java", "src/Item0416.java", "src/Item0449.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 52900,
+      "vectorNanos" : 356197300,
+      "keywordAndFusionNanos" : 1192300,
+      "totalNanos" : 359338600
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0126.java", "src/Item0027.java", "src/Item0159.java", "src/Item0225.java", "src/Item0258.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 54400,
+      "vectorNanos" : 353040500,
+      "keywordAndFusionNanos" : 1846100,
+      "totalNanos" : 356690100
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0133.java", "src/Item0034.java", "src/Item0067.java", "src/Item0001.java", "src/Item0100.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 56700,
+      "vectorNanos" : 343213300,
+      "keywordAndFusionNanos" : 1234500,
+      "totalNanos" : 346864000
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0140.java", "src/Item0041.java", "src/Item0074.java", "src/Item0173.java", "src/Item0272.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 40500,
+      "vectorNanos" : 340356500,
+      "keywordAndFusionNanos" : 1559300,
+      "totalNanos" : 343603300
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0147.java", "src/Item0015.java", "src/Item0048.java", "src/Item0114.java", "src/Item0213.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 38100,
+      "vectorNanos" : 293129900,
+      "keywordAndFusionNanos" : 1975700,
+      "totalNanos" : 296706400
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0154.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java", "src/Item0121.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 106400,
+      "vectorNanos" : 290537300,
+      "keywordAndFusionNanos" : 1154900,
+      "totalNanos" : 294612400
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0161.java", "src/Item0062.java", "src/Item0095.java", "src/Item0194.java", "src/Item0260.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30000,
+      "vectorNanos" : 275921800,
+      "keywordAndFusionNanos" : 1513000,
+      "totalNanos" : 278908900
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0168.java", "src/Item0003.java", "src/Item0036.java", "src/Item0069.java", "src/Item0102.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 45200,
+      "vectorNanos" : 292699000,
+      "keywordAndFusionNanos" : 1349900,
+      "totalNanos" : 296018500
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0175.java", "src/Item0010.java", "src/Item0043.java", "src/Item0076.java", "src/Item0142.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 38500,
+      "vectorNanos" : 282181200,
+      "keywordAndFusionNanos" : 1224300,
+      "totalNanos" : 285678400
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0182.java", "src/Item0050.java", "src/Item0083.java", "src/Item0281.java", "src/Item0380.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 49200,
+      "vectorNanos" : 294730400,
+      "keywordAndFusionNanos" : 1493900,
+      "totalNanos" : 297988600
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0189.java", "src/Item0024.java", "src/Item0057.java", "src/Item0123.java", "src/Item0156.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 42500,
+      "vectorNanos" : 276094000,
+      "keywordAndFusionNanos" : 1142200,
+      "totalNanos" : 278932900
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0196.java", "src/Item0031.java", "src/Item0064.java", "src/Item0097.java", "src/Item0130.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 38700,
+      "vectorNanos" : 271591000,
+      "keywordAndFusionNanos" : 1163100,
+      "totalNanos" : 274358200
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0203.java", "src/Item0005.java", "src/Item0038.java", "src/Item0104.java", "src/Item0137.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 92700,
+      "vectorNanos" : 298709700,
+      "keywordAndFusionNanos" : 1337700,
+      "totalNanos" : 301649000
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0210.java", "src/Item0012.java", "src/Item0045.java", "src/Item0078.java", "src/Item0111.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 55900,
+      "vectorNanos" : 332249800,
+      "keywordAndFusionNanos" : 1473600,
+      "totalNanos" : 335275800
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0217.java", "src/Item0019.java", "src/Item0118.java", "src/Item0316.java", "src/Item0349.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 81500,
+      "vectorNanos" : 303404400,
+      "keywordAndFusionNanos" : 909400,
+      "totalNanos" : 306436300
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0224.java", "src/Item0026.java", "src/Item0059.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 69700,
+      "vectorNanos" : 315698000,
+      "keywordAndFusionNanos" : 793800,
+      "totalNanos" : 319387400
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0231.java", "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 55900,
+      "vectorNanos" : 347526700,
+      "keywordAndFusionNanos" : 993700,
+      "totalNanos" : 350137300
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0238.java", "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 44600,
+      "vectorNanos" : 347200400,
+      "keywordAndFusionNanos" : 982100,
+      "totalNanos" : 350168700
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0245.java", "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34000,
+      "vectorNanos" : 326985700,
+      "keywordAndFusionNanos" : 1002800,
+      "totalNanos" : 329870300
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0252.java", "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 51800,
+      "vectorNanos" : 301881000,
+      "keywordAndFusionNanos" : 695600,
+      "totalNanos" : 304569400
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0259.java", "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31100,
+      "vectorNanos" : 299802300,
+      "keywordAndFusionNanos" : 1254600,
+      "totalNanos" : 302614200
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0266.java", "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 48900,
+      "vectorNanos" : 299659400,
+      "keywordAndFusionNanos" : 983100,
+      "totalNanos" : 303749500
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0273.java", "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 49100,
+      "vectorNanos" : 298149500,
+      "keywordAndFusionNanos" : 725700,
+      "totalNanos" : 301097000
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0280.java", "src/Item0082.java", "src/Item0181.java", "src/Item0005.java", "src/Item0013.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28300,
+      "vectorNanos" : 321727700,
+      "keywordAndFusionNanos" : 675300,
+      "totalNanos" : 323842000
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0287.java", "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 50000,
+      "vectorNanos" : 287111200,
+      "keywordAndFusionNanos" : 661000,
+      "totalNanos" : 289408500
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0294.java", "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 59100,
+      "vectorNanos" : 297246200,
+      "keywordAndFusionNanos" : 772400,
+      "totalNanos" : 299660500
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0301.java", "src/Item0004.java", "src/Item0037.java", "src/Item0103.java", "src/Item0136.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 65000,
+      "vectorNanos" : 273190800,
+      "keywordAndFusionNanos" : 654300,
+      "totalNanos" : 275556600
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0308.java", "src/Item0209.java", "src/Item0407.java", "src/Item0014.java", "src/Item0039.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24300,
+      "vectorNanos" : 279753200,
+      "keywordAndFusionNanos" : 637900,
+      "totalNanos" : 282045000
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0315.java", "src/Item0018.java", "src/Item0117.java", "src/Item0216.java", "src/Item0249.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24500,
+      "vectorNanos" : 310039100,
+      "keywordAndFusionNanos" : 722600,
+      "totalNanos" : 312253300
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0322.java", "src/Item0025.java", "src/Item0058.java", "src/Item0124.java", "src/Item0157.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28300,
+      "vectorNanos" : 345483200,
+      "keywordAndFusionNanos" : 656400,
+      "totalNanos" : 347808400
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0428.java", "src/Item0002.java", "src/Item0027.java", "src/Item0030.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 50100,
+      "vectorNanos" : 363429700,
+      "keywordAndFusionNanos" : 885600,
+      "totalNanos" : 366578700
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0336.java", "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 38000,
+      "vectorNanos" : 368686500,
+      "keywordAndFusionNanos" : 716500,
+      "totalNanos" : 371293400
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "HYBRID",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0343.java", "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 67300,
+      "vectorNanos" : 388606600,
+      "keywordAndFusionNanos" : 704000,
+      "totalNanos" : 392993600
+    }
+  }, {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 32500,
+      "vectorNanos" : 349560000,
+      "keywordAndFusionNanos" : 942900,
+      "totalNanos" : 352264800
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 37800,
+      "vectorNanos" : 378347900,
+      "keywordAndFusionNanos" : 1187900,
+      "totalNanos" : 381252900
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 46900,
+      "vectorNanos" : 351899100,
+      "keywordAndFusionNanos" : 3849100,
+      "totalNanos" : 357958300
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 69300,
+      "vectorNanos" : 492750200,
+      "keywordAndFusionNanos" : 757200,
+      "totalNanos" : 496237100
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 53700,
+      "vectorNanos" : 369567800,
+      "keywordAndFusionNanos" : 980700,
+      "totalNanos" : 372328000
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0035.java", "src/Item0002.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 63500,
+      "vectorNanos" : 370936100,
+      "keywordAndFusionNanos" : 678700,
+      "totalNanos" : 373741500
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 37100,
+      "vectorNanos" : 354247000,
+      "keywordAndFusionNanos" : 719600,
+      "totalNanos" : 357315900
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0049.java", "src/Item0016.java", "src/Item0115.java", "src/Item0148.java", "src/Item0214.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 35200,
+      "vectorNanos" : 403431900,
+      "keywordAndFusionNanos" : 538200,
+      "totalNanos" : 405717000
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0056.java", "src/Item0023.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 51100,
+      "vectorNanos" : 361742900,
+      "keywordAndFusionNanos" : 576000,
+      "totalNanos" : 364118300
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0063.java", "src/Item0030.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 61000,
+      "vectorNanos" : 366772500,
+      "keywordAndFusionNanos" : 523400,
+      "totalNanos" : 368960700
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0034.java", "src/Item0067.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34000,
+      "vectorNanos" : 297441600,
+      "keywordAndFusionNanos" : 447600,
+      "totalNanos" : 299532800
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0077.java", "src/Item0011.java", "src/Item0044.java", "src/Item0110.java", "src/Item0143.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21900,
+      "vectorNanos" : 301713600,
+      "keywordAndFusionNanos" : 498900,
+      "totalNanos" : 303796300
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0084.java", "src/Item0051.java", "src/Item0150.java", "src/Item0183.java", "src/Item0282.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 51000,
+      "vectorNanos" : 310254500,
+      "keywordAndFusionNanos" : 757400,
+      "totalNanos" : 312886100
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0091.java", "src/Item0190.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 60000,
+      "vectorNanos" : 330917600,
+      "keywordAndFusionNanos" : 461800,
+      "totalNanos" : 333496300
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0098.java", "src/Item0032.java", "src/Item0065.java", "src/Item0131.java", "src/Item0164.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19400,
+      "vectorNanos" : 313275000,
+      "keywordAndFusionNanos" : 664500,
+      "totalNanos" : 315385700
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0105.java", "src/Item0006.java", "src/Item0039.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21600,
+      "vectorNanos" : 292702200,
+      "keywordAndFusionNanos" : 493400,
+      "totalNanos" : 294748000
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0112.java", "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0145.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24300,
+      "vectorNanos" : 268459600,
+      "keywordAndFusionNanos" : 459500,
+      "totalNanos" : 270366000
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0218.java", "src/Item0317.java", "src/Item0416.java", "src/Item0449.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19300,
+      "vectorNanos" : 310318300,
+      "keywordAndFusionNanos" : 461600,
+      "totalNanos" : 312189300
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0126.java", "src/Item0027.java", "src/Item0159.java", "src/Item0225.java", "src/Item0258.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19600,
+      "vectorNanos" : 275703600,
+      "keywordAndFusionNanos" : 595800,
+      "totalNanos" : 277822400
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0133.java", "src/Item0034.java", "src/Item0067.java", "src/Item0001.java", "src/Item0100.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21600,
+      "vectorNanos" : 286464900,
+      "keywordAndFusionNanos" : 466000,
+      "totalNanos" : 288360000
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0140.java", "src/Item0041.java", "src/Item0074.java", "src/Item0173.java", "src/Item0272.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22600,
+      "vectorNanos" : 267431400,
+      "keywordAndFusionNanos" : 720700,
+      "totalNanos" : 269537000
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0147.java", "src/Item0015.java", "src/Item0048.java", "src/Item0114.java", "src/Item0213.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24500,
+      "vectorNanos" : 272876100,
+      "keywordAndFusionNanos" : 466800,
+      "totalNanos" : 274630400
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0154.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java", "src/Item0121.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 26600,
+      "vectorNanos" : 288844000,
+      "keywordAndFusionNanos" : 489400,
+      "totalNanos" : 290765100
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0161.java", "src/Item0062.java", "src/Item0095.java", "src/Item0194.java", "src/Item0260.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17600,
+      "vectorNanos" : 289433200,
+      "keywordAndFusionNanos" : 523100,
+      "totalNanos" : 291255700
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0168.java", "src/Item0003.java", "src/Item0036.java", "src/Item0069.java", "src/Item0102.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 38200,
+      "vectorNanos" : 293282100,
+      "keywordAndFusionNanos" : 484300,
+      "totalNanos" : 295456300
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0175.java", "src/Item0010.java", "src/Item0043.java", "src/Item0076.java", "src/Item0142.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 50400,
+      "vectorNanos" : 301088400,
+      "keywordAndFusionNanos" : 561000,
+      "totalNanos" : 304109700
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0182.java", "src/Item0050.java", "src/Item0083.java", "src/Item0281.java", "src/Item0380.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 35100,
+      "vectorNanos" : 310861900,
+      "keywordAndFusionNanos" : 659300,
+      "totalNanos" : 313062400
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0189.java", "src/Item0024.java", "src/Item0057.java", "src/Item0123.java", "src/Item0156.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31200,
+      "vectorNanos" : 333299800,
+      "keywordAndFusionNanos" : 607100,
+      "totalNanos" : 335599100
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0196.java", "src/Item0031.java", "src/Item0064.java", "src/Item0097.java", "src/Item0130.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34700,
+      "vectorNanos" : 290535400,
+      "keywordAndFusionNanos" : 519900,
+      "totalNanos" : 292706700
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0203.java", "src/Item0005.java", "src/Item0038.java", "src/Item0104.java", "src/Item0137.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 65200,
+      "vectorNanos" : 314569900,
+      "keywordAndFusionNanos" : 531400,
+      "totalNanos" : 317290900
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0210.java", "src/Item0012.java", "src/Item0045.java", "src/Item0078.java", "src/Item0111.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28000,
+      "vectorNanos" : 300237300,
+      "keywordAndFusionNanos" : 569300,
+      "totalNanos" : 302329700
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0217.java", "src/Item0019.java", "src/Item0118.java", "src/Item0316.java", "src/Item0349.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31700,
+      "vectorNanos" : 300237900,
+      "keywordAndFusionNanos" : 442200,
+      "totalNanos" : 303393900
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0224.java", "src/Item0026.java", "src/Item0059.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 18300,
+      "vectorNanos" : 296674600,
+      "keywordAndFusionNanos" : 463100,
+      "totalNanos" : 298444600
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0231.java", "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22500,
+      "vectorNanos" : 307053700,
+      "keywordAndFusionNanos" : 497200,
+      "totalNanos" : 309035000
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0238.java", "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29800,
+      "vectorNanos" : 288616000,
+      "keywordAndFusionNanos" : 473300,
+      "totalNanos" : 290823900
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0245.java", "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19700,
+      "vectorNanos" : 272577100,
+      "keywordAndFusionNanos" : 657200,
+      "totalNanos" : 274512400
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0252.java", "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29600,
+      "vectorNanos" : 279313100,
+      "keywordAndFusionNanos" : 507900,
+      "totalNanos" : 281393100
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0259.java", "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21900,
+      "vectorNanos" : 282717100,
+      "keywordAndFusionNanos" : 344500,
+      "totalNanos" : 284613700
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0266.java", "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19500,
+      "vectorNanos" : 287173500,
+      "keywordAndFusionNanos" : 469000,
+      "totalNanos" : 288972000
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0273.java", "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23200,
+      "vectorNanos" : 253752300,
+      "keywordAndFusionNanos" : 451400,
+      "totalNanos" : 255515000
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0280.java", "src/Item0082.java", "src/Item0181.java", "src/Item0005.java", "src/Item0013.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 27400,
+      "vectorNanos" : 281870600,
+      "keywordAndFusionNanos" : 476100,
+      "totalNanos" : 283587500
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0287.java", "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20800,
+      "vectorNanos" : 264867600,
+      "keywordAndFusionNanos" : 438100,
+      "totalNanos" : 266702400
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0294.java", "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 16800,
+      "vectorNanos" : 265598800,
+      "keywordAndFusionNanos" : 457700,
+      "totalNanos" : 267295100
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0301.java", "src/Item0004.java", "src/Item0037.java", "src/Item0103.java", "src/Item0136.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29200,
+      "vectorNanos" : 269705500,
+      "keywordAndFusionNanos" : 541000,
+      "totalNanos" : 271806500
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0308.java", "src/Item0209.java", "src/Item0407.java", "src/Item0014.java", "src/Item0039.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 27200,
+      "vectorNanos" : 269567900,
+      "keywordAndFusionNanos" : 546100,
+      "totalNanos" : 271506600
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0315.java", "src/Item0018.java", "src/Item0117.java", "src/Item0216.java", "src/Item0249.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 27700,
+      "vectorNanos" : 263970600,
+      "keywordAndFusionNanos" : 451100,
+      "totalNanos" : 265810900
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0322.java", "src/Item0025.java", "src/Item0058.java", "src/Item0124.java", "src/Item0157.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21800,
+      "vectorNanos" : 278944800,
+      "keywordAndFusionNanos" : 543100,
+      "totalNanos" : 280930200
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0428.java", "src/Item0002.java", "src/Item0027.java", "src/Item0030.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28300,
+      "vectorNanos" : 268039900,
+      "keywordAndFusionNanos" : 432700,
+      "totalNanos" : 270016800
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0336.java", "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20400,
+      "vectorNanos" : 279414200,
+      "keywordAndFusionNanos" : 466700,
+      "totalNanos" : 281248900
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "HYBRID",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0343.java", "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19200,
+      "vectorNanos" : 306438800,
+      "keywordAndFusionNanos" : 463200,
+      "totalNanos" : 308312700
+    }
+  }, {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java", "src/Item0004.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 63000,
+      "vectorNanos" : 292495800,
+      "keywordAndFusionNanos" : 653000,
+      "totalNanos" : 294824000
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 600,
+      "vectorNanos" : 406118100,
+      "keywordAndFusionNanos" : 902200,
+      "totalNanos" : 408589800
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 272629800,
+      "keywordAndFusionNanos" : 874400,
+      "totalNanos" : 275190800
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 284994200,
+      "keywordAndFusionNanos" : 688600,
+      "totalNanos" : 287186000
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 298800100,
+      "keywordAndFusionNanos" : 600000,
+      "totalNanos" : 300720100
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0035.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256674000,
+      "keywordAndFusionNanos" : 570300,
+      "totalNanos" : 258586500
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256488100,
+      "keywordAndFusionNanos" : 696200,
+      "totalNanos" : 258474000
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0049.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 282646400,
+      "keywordAndFusionNanos" : 561600,
+      "totalNanos" : 284603300
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0056.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 316052900,
+      "keywordAndFusionNanos" : 640200,
+      "totalNanos" : 318201900
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0063.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 354600500,
+      "keywordAndFusionNanos" : 619700,
+      "totalNanos" : 356669600
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 347718300,
+      "keywordAndFusionNanos" : 630600,
+      "totalNanos" : 349822800
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0077.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 344443200,
+      "keywordAndFusionNanos" : 611200,
+      "totalNanos" : 346474000
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0084.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 342288300,
+      "keywordAndFusionNanos" : 545800,
+      "totalNanos" : 344383500
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0091.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 411584600,
+      "keywordAndFusionNanos" : 650800,
+      "totalNanos" : 413859700
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0098.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 325577400,
+      "keywordAndFusionNanos" : 672000,
+      "totalNanos" : 327898900
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0105.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 347494100,
+      "keywordAndFusionNanos" : 610100,
+      "totalNanos" : 349846700
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0112.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 269850100,
+      "keywordAndFusionNanos" : 623200,
+      "totalNanos" : 271894900
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 287917800,
+      "keywordAndFusionNanos" : 588200,
+      "totalNanos" : 289850100
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0126.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 311945900,
+      "keywordAndFusionNanos" : 905100,
+      "totalNanos" : 314198700
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0133.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 271038600,
+      "keywordAndFusionNanos" : 603700,
+      "totalNanos" : 273390600
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0140.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 268044600,
+      "keywordAndFusionNanos" : 597200,
+      "totalNanos" : 270114100
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0147.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 287650300,
+      "keywordAndFusionNanos" : 609400,
+      "totalNanos" : 289678000
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0154.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 326553400,
+      "keywordAndFusionNanos" : 608100,
+      "totalNanos" : 328704500
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0161.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 291699900,
+      "keywordAndFusionNanos" : 656100,
+      "totalNanos" : 293995000
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0168.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 300,
+      "vectorNanos" : 320019800,
+      "keywordAndFusionNanos" : 575600,
+      "totalNanos" : 322010200
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0175.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 285112600,
+      "keywordAndFusionNanos" : 627200,
+      "totalNanos" : 286999800
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0182.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 281888600,
+      "keywordAndFusionNanos" : 599800,
+      "totalNanos" : 283839100
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0189.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 313385600,
+      "keywordAndFusionNanos" : 1733600,
+      "totalNanos" : 316757800
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0196.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 300,
+      "vectorNanos" : 326102200,
+      "keywordAndFusionNanos" : 633800,
+      "totalNanos" : 329199200
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0203.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 317061800,
+      "keywordAndFusionNanos" : 989900,
+      "totalNanos" : 319449900
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0210.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 268215100,
+      "keywordAndFusionNanos" : 1322300,
+      "totalNanos" : 270905400
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0217.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 900,
+      "vectorNanos" : 291406500,
+      "keywordAndFusionNanos" : 1044500,
+      "totalNanos" : 294558800
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0224.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 256817200,
+      "keywordAndFusionNanos" : 493700,
+      "totalNanos" : 258953700
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0231.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 260133600,
+      "keywordAndFusionNanos" : 424400,
+      "totalNanos" : 262167500
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0238.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 266109000,
+      "keywordAndFusionNanos" : 445800,
+      "totalNanos" : 267889100
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0245.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256345400,
+      "keywordAndFusionNanos" : 396200,
+      "totalNanos" : 258147100
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0252.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 262690000,
+      "keywordAndFusionNanos" : 373300,
+      "totalNanos" : 264285200
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0259.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 259127000,
+      "keywordAndFusionNanos" : 251700,
+      "totalNanos" : 260718300
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0266.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 255139700,
+      "keywordAndFusionNanos" : 381900,
+      "totalNanos" : 256730600
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0273.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 260884000,
+      "keywordAndFusionNanos" : 387800,
+      "totalNanos" : 262512600
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0280.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 280621500,
+      "keywordAndFusionNanos" : 388100,
+      "totalNanos" : 282260500
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0287.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 254639000,
+      "keywordAndFusionNanos" : 636400,
+      "totalNanos" : 256497200
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0294.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 262359000,
+      "keywordAndFusionNanos" : 585100,
+      "totalNanos" : 266043800
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0301.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 257695400,
+      "keywordAndFusionNanos" : 368900,
+      "totalNanos" : 259806500
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0308.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 261359000,
+      "keywordAndFusionNanos" : 397000,
+      "totalNanos" : 263043600
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0315.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 254115000,
+      "keywordAndFusionNanos" : 395600,
+      "totalNanos" : 255977200
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0322.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 272534600,
+      "keywordAndFusionNanos" : 375300,
+      "totalNanos" : 274052900
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 256460300,
+      "keywordAndFusionNanos" : 370700,
+      "totalNanos" : 258188800
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0336.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 258246500,
+      "keywordAndFusionNanos" : 391200,
+      "totalNanos" : 260386500
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "KEYWORD",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0343.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 252654700,
+      "keywordAndFusionNanos" : 389500,
+      "totalNanos" : 254440100
+    }
+  }, {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java", "src/Item0004.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 250884400,
+      "keywordAndFusionNanos" : 426000,
+      "totalNanos" : 252458500
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 251594800,
+      "keywordAndFusionNanos" : 562300,
+      "totalNanos" : 253722500
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 284133000,
+      "keywordAndFusionNanos" : 401700,
+      "totalNanos" : 286038300
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 266327200,
+      "keywordAndFusionNanos" : 390100,
+      "totalNanos" : 267930200
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 268011300,
+      "keywordAndFusionNanos" : 281800,
+      "totalNanos" : 269675600
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0035.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 262562400,
+      "keywordAndFusionNanos" : 380800,
+      "totalNanos" : 264251800
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256347600,
+      "keywordAndFusionNanos" : 383200,
+      "totalNanos" : 258116200
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0049.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 253942000,
+      "keywordAndFusionNanos" : 351100,
+      "totalNanos" : 255492800
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0056.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 254745500,
+      "keywordAndFusionNanos" : 369600,
+      "totalNanos" : 256268700
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0063.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 258968100,
+      "keywordAndFusionNanos" : 370600,
+      "totalNanos" : 260571600
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 252623800,
+      "keywordAndFusionNanos" : 369800,
+      "totalNanos" : 254201000
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0077.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 250461000,
+      "keywordAndFusionNanos" : 366800,
+      "totalNanos" : 252017200
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0084.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 250865100,
+      "keywordAndFusionNanos" : 234400,
+      "totalNanos" : 252471200
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0091.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 257427500,
+      "keywordAndFusionNanos" : 364800,
+      "totalNanos" : 259135900
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0098.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 283057900,
+      "keywordAndFusionNanos" : 363300,
+      "totalNanos" : 284606200
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0105.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 255942500,
+      "keywordAndFusionNanos" : 427500,
+      "totalNanos" : 257647000
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0112.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 248508600,
+      "keywordAndFusionNanos" : 364100,
+      "totalNanos" : 250560000
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 278259300,
+      "keywordAndFusionNanos" : 388500,
+      "totalNanos" : 279889500
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0126.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 252058400,
+      "keywordAndFusionNanos" : 456900,
+      "totalNanos" : 253796400
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0133.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 261948900,
+      "keywordAndFusionNanos" : 415000,
+      "totalNanos" : 263544800
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0140.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 252163800,
+      "keywordAndFusionNanos" : 375800,
+      "totalNanos" : 253837300
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0147.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 265636300,
+      "keywordAndFusionNanos" : 449400,
+      "totalNanos" : 267576300
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0154.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 259332900,
+      "keywordAndFusionNanos" : 412800,
+      "totalNanos" : 261253400
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0161.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 300,
+      "vectorNanos" : 261446000,
+      "keywordAndFusionNanos" : 463300,
+      "totalNanos" : 263444700
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0168.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 260793400,
+      "keywordAndFusionNanos" : 369500,
+      "totalNanos" : 262424000
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0175.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 289968700,
+      "keywordAndFusionNanos" : 363100,
+      "totalNanos" : 291699400
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0182.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 257006200,
+      "keywordAndFusionNanos" : 482500,
+      "totalNanos" : 258817500
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0189.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256606800,
+      "keywordAndFusionNanos" : 366000,
+      "totalNanos" : 258493200
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0196.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 257500500,
+      "keywordAndFusionNanos" : 374700,
+      "totalNanos" : 259044700
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0203.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 252419700,
+      "keywordAndFusionNanos" : 260800,
+      "totalNanos" : 254014100
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0210.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 262725000,
+      "keywordAndFusionNanos" : 388800,
+      "totalNanos" : 264320000
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0217.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 256654300,
+      "keywordAndFusionNanos" : 387400,
+      "totalNanos" : 258260900
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0224.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 260976500,
+      "keywordAndFusionNanos" : 380200,
+      "totalNanos" : 262594400
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0231.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 263564500,
+      "keywordAndFusionNanos" : 380300,
+      "totalNanos" : 265203100
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0238.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 297748300,
+      "keywordAndFusionNanos" : 425100,
+      "totalNanos" : 299729900
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0245.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 282211500,
+      "keywordAndFusionNanos" : 581100,
+      "totalNanos" : 284245300
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0252.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 283132500,
+      "keywordAndFusionNanos" : 366800,
+      "totalNanos" : 285218300
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0259.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 296006800,
+      "keywordAndFusionNanos" : 487700,
+      "totalNanos" : 297633300
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0266.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 259111100,
+      "keywordAndFusionNanos" : 399800,
+      "totalNanos" : 261043600
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0273.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 265140700,
+      "keywordAndFusionNanos" : 406300,
+      "totalNanos" : 266877700
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0280.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 279775200,
+      "keywordAndFusionNanos" : 358400,
+      "totalNanos" : 281438000
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0287.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 265784900,
+      "keywordAndFusionNanos" : 380900,
+      "totalNanos" : 267433800
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0294.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 274132700,
+      "keywordAndFusionNanos" : 371000,
+      "totalNanos" : 275780400
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0301.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 0,
+      "vectorNanos" : 252050700,
+      "keywordAndFusionNanos" : 392800,
+      "totalNanos" : 253729100
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0308.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 257707500,
+      "keywordAndFusionNanos" : 390000,
+      "totalNanos" : 259337000
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0315.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 258958500,
+      "keywordAndFusionNanos" : 493100,
+      "totalNanos" : 260656100
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0322.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 200,
+      "vectorNanos" : 262363500,
+      "keywordAndFusionNanos" : 323800,
+      "totalNanos" : 264143200
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 253399300,
+      "keywordAndFusionNanos" : 367800,
+      "totalNanos" : 254977600
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0336.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 285896700,
+      "keywordAndFusionNanos" : 417800,
+      "totalNanos" : 287695300
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "KEYWORD",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0343.java", "src/Item0000.java", "src/Item0001.java", "src/Item0002.java", "src/Item0003.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 100,
+      "vectorNanos" : 282571500,
+      "keywordAndFusionNanos" : 539100,
+      "totalNanos" : 284423700
+    }
+  }, {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 40400,
+      "vectorNanos" : 280837600,
+      "keywordAndFusionNanos" : 1262800,
+      "totalNanos" : 283511700
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33100,
+      "vectorNanos" : 318093800,
+      "keywordAndFusionNanos" : 950600,
+      "totalNanos" : 320927400
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30600,
+      "vectorNanos" : 282960800,
+      "keywordAndFusionNanos" : 1028400,
+      "totalNanos" : 285507100
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34000,
+      "vectorNanos" : 267812000,
+      "keywordAndFusionNanos" : 617600,
+      "totalNanos" : 270102400
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34000,
+      "vectorNanos" : 274339300,
+      "keywordAndFusionNanos" : 818500,
+      "totalNanos" : 276578600
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 26600,
+      "vectorNanos" : 268273700,
+      "keywordAndFusionNanos" : 689500,
+      "totalNanos" : 270544600
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23200,
+      "vectorNanos" : 263053000,
+      "keywordAndFusionNanos" : 595600,
+      "totalNanos" : 265003400
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0016.java", "src/Item0049.java", "src/Item0115.java", "src/Item0148.java", "src/Item0214.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17900,
+      "vectorNanos" : 262953300,
+      "keywordAndFusionNanos" : 641800,
+      "totalNanos" : 264861900
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20600,
+      "vectorNanos" : 270504400,
+      "keywordAndFusionNanos" : 667300,
+      "totalNanos" : 272465400
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 26800,
+      "vectorNanos" : 296021600,
+      "keywordAndFusionNanos" : 641800,
+      "totalNanos" : 297985000
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0034.java", "src/Item0067.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 25400,
+      "vectorNanos" : 310437500,
+      "keywordAndFusionNanos" : 639900,
+      "totalNanos" : 312528700
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0011.java", "src/Item0044.java", "src/Item0077.java", "src/Item0110.java", "src/Item0143.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 18500,
+      "vectorNanos" : 290959900,
+      "keywordAndFusionNanos" : 899400,
+      "totalNanos" : 293434400
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0051.java", "src/Item0084.java", "src/Item0150.java", "src/Item0183.java", "src/Item0282.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21900,
+      "vectorNanos" : 262366400,
+      "keywordAndFusionNanos" : 687400,
+      "totalNanos" : 264334600
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0190.java", "src/Item0091.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24800,
+      "vectorNanos" : 258982800,
+      "keywordAndFusionNanos" : 635500,
+      "totalNanos" : 260908000
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0032.java", "src/Item0065.java", "src/Item0098.java", "src/Item0131.java", "src/Item0164.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29900,
+      "vectorNanos" : 277153900,
+      "keywordAndFusionNanos" : 618200,
+      "totalNanos" : 279161000
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30300,
+      "vectorNanos" : 296678000,
+      "keywordAndFusionNanos" : 893200,
+      "totalNanos" : 299592300
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java", "src/Item0145.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31100,
+      "vectorNanos" : 272318900,
+      "keywordAndFusionNanos" : 898700,
+      "totalNanos" : 274952600
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0218.java", "src/Item0317.java", "src/Item0416.java", "src/Item0449.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33300,
+      "vectorNanos" : 280889000,
+      "keywordAndFusionNanos" : 709500,
+      "totalNanos" : 283083900
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0027.java", "src/Item0126.java", "src/Item0159.java", "src/Item0225.java", "src/Item0258.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 34000,
+      "vectorNanos" : 288577100,
+      "keywordAndFusionNanos" : 665900,
+      "totalNanos" : 290860800
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0034.java", "src/Item0067.java", "src/Item0001.java", "src/Item0100.java", "src/Item0133.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24200,
+      "vectorNanos" : 282561100,
+      "keywordAndFusionNanos" : 616300,
+      "totalNanos" : 284518800
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0041.java", "src/Item0074.java", "src/Item0140.java", "src/Item0173.java", "src/Item0272.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 16700,
+      "vectorNanos" : 327817800,
+      "keywordAndFusionNanos" : 785000,
+      "totalNanos" : 329873100
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0015.java", "src/Item0048.java", "src/Item0114.java", "src/Item0147.java", "src/Item0213.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 26800,
+      "vectorNanos" : 284362300,
+      "keywordAndFusionNanos" : 540500,
+      "totalNanos" : 286338900
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0022.java", "src/Item0055.java", "src/Item0088.java", "src/Item0121.java", "src/Item0154.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22200,
+      "vectorNanos" : 290690300,
+      "keywordAndFusionNanos" : 644200,
+      "totalNanos" : 292786600
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0062.java", "src/Item0095.java", "src/Item0161.java", "src/Item0194.java", "src/Item0260.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24600,
+      "vectorNanos" : 265169200,
+      "keywordAndFusionNanos" : 637100,
+      "totalNanos" : 267068900
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0003.java", "src/Item0036.java", "src/Item0069.java", "src/Item0102.java", "src/Item0135.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 25700,
+      "vectorNanos" : 268677800,
+      "keywordAndFusionNanos" : 591300,
+      "totalNanos" : 270716800
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0010.java", "src/Item0043.java", "src/Item0076.java", "src/Item0142.java", "src/Item0175.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17700,
+      "vectorNanos" : 269201100,
+      "keywordAndFusionNanos" : 835000,
+      "totalNanos" : 271504500
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0050.java", "src/Item0083.java", "src/Item0182.java", "src/Item0281.java", "src/Item0380.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28800,
+      "vectorNanos" : 275191400,
+      "keywordAndFusionNanos" : 759500,
+      "totalNanos" : 277418400
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0024.java", "src/Item0057.java", "src/Item0123.java", "src/Item0156.java", "src/Item0189.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19900,
+      "vectorNanos" : 264146900,
+      "keywordAndFusionNanos" : 600700,
+      "totalNanos" : 265980300
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0031.java", "src/Item0064.java", "src/Item0097.java", "src/Item0130.java", "src/Item0163.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23100,
+      "vectorNanos" : 270512700,
+      "keywordAndFusionNanos" : 643600,
+      "totalNanos" : 272495800
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0005.java", "src/Item0038.java", "src/Item0104.java", "src/Item0137.java", "src/Item0203.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 18900,
+      "vectorNanos" : 280661800,
+      "keywordAndFusionNanos" : 1135900,
+      "totalNanos" : 283079700
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0012.java", "src/Item0045.java", "src/Item0078.java", "src/Item0111.java", "src/Item0144.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 45600,
+      "vectorNanos" : 303424900,
+      "keywordAndFusionNanos" : 605900,
+      "totalNanos" : 305490300
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0019.java", "src/Item0118.java", "src/Item0217.java", "src/Item0316.java", "src/Item0349.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22400,
+      "vectorNanos" : 322099300,
+      "keywordAndFusionNanos" : 669400,
+      "totalNanos" : 324134900
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0026.java", "src/Item0059.java", "src/Item0125.java", "src/Item0158.java", "src/Item0224.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 36000,
+      "vectorNanos" : 285779900,
+      "keywordAndFusionNanos" : 465200,
+      "totalNanos" : 287936200
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30100,
+      "vectorNanos" : 276263400,
+      "keywordAndFusionNanos" : 484200,
+      "totalNanos" : 278399900
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 32200,
+      "vectorNanos" : 259472500,
+      "keywordAndFusionNanos" : 517100,
+      "totalNanos" : 261492800
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 25200,
+      "vectorNanos" : 262983000,
+      "keywordAndFusionNanos" : 623200,
+      "totalNanos" : 265067100
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17600,
+      "vectorNanos" : 266522700,
+      "keywordAndFusionNanos" : 446800,
+      "totalNanos" : 268319700
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20300,
+      "vectorNanos" : 267620800,
+      "keywordAndFusionNanos" : 589500,
+      "totalNanos" : 269572700
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28700,
+      "vectorNanos" : 263881500,
+      "keywordAndFusionNanos" : 500900,
+      "totalNanos" : 265856300
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 35200,
+      "vectorNanos" : 261480400,
+      "keywordAndFusionNanos" : 431400,
+      "totalNanos" : 263590600
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0082.java", "src/Item0181.java", "src/Item0280.java", "src/Item0005.java", "src/Item0013.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 37400,
+      "vectorNanos" : 277892200,
+      "keywordAndFusionNanos" : 449300,
+      "totalNanos" : 279931100
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19100,
+      "vectorNanos" : 255060400,
+      "keywordAndFusionNanos" : 473800,
+      "totalNanos" : 256961600
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 47600,
+      "vectorNanos" : 278159800,
+      "keywordAndFusionNanos" : 764700,
+      "totalNanos" : 280447100
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0004.java", "src/Item0037.java", "src/Item0103.java", "src/Item0136.java", "src/Item0169.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 47300,
+      "vectorNanos" : 258133300,
+      "keywordAndFusionNanos" : 438400,
+      "totalNanos" : 260636100
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0209.java", "src/Item0308.java", "src/Item0407.java", "src/Item0014.java", "src/Item0039.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17200,
+      "vectorNanos" : 275451200,
+      "keywordAndFusionNanos" : 474100,
+      "totalNanos" : 277180700
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0018.java", "src/Item0117.java", "src/Item0216.java", "src/Item0249.java", "src/Item0315.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 25100,
+      "vectorNanos" : 264528700,
+      "keywordAndFusionNanos" : 455300,
+      "totalNanos" : 266332600
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0025.java", "src/Item0058.java", "src/Item0124.java", "src/Item0157.java", "src/Item0223.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22500,
+      "vectorNanos" : 267308500,
+      "keywordAndFusionNanos" : 352600,
+      "totalNanos" : 268990900
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0428.java", "src/Item0002.java", "src/Item0027.java", "src/Item0030.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 16700,
+      "vectorNanos" : 269188200,
+      "keywordAndFusionNanos" : 439400,
+      "totalNanos" : 270919200
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 17400,
+      "vectorNanos" : 287296800,
+      "keywordAndFusionNanos" : 583100,
+      "totalNanos" : 289178300
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "VECTOR",
+    "phase" : "first-pass",
+    "repeat" : 0,
+    "hitPaths" : [ "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java", "src/Item0145.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28000,
+      "vectorNanos" : 284033200,
+      "keywordAndFusionNanos" : 706200,
+      "totalNanos" : 286238000
+    }
+  }, {
+    "id" : "q00",
+    "query" : "handleItem0000",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31300,
+      "vectorNanos" : 295685200,
+      "keywordAndFusionNanos" : 517000,
+      "totalNanos" : 298298800
+    }
+  }, {
+    "id" : "q01",
+    "query" : "handleItem0007",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 27800,
+      "vectorNanos" : 277615300,
+      "keywordAndFusionNanos" : 735500,
+      "totalNanos" : 280160200
+    }
+  }, {
+    "id" : "q02",
+    "query" : "handleItem0014",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 40500,
+      "vectorNanos" : 292794800,
+      "keywordAndFusionNanos" : 600800,
+      "totalNanos" : 295225000
+    }
+  }, {
+    "id" : "q03",
+    "query" : "handleItem0021",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31100,
+      "vectorNanos" : 327396100,
+      "keywordAndFusionNanos" : 438900,
+      "totalNanos" : 329745600
+    }
+  }, {
+    "id" : "q04",
+    "query" : "handleItem0028",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20000,
+      "vectorNanos" : 286947800,
+      "keywordAndFusionNanos" : 318300,
+      "totalNanos" : 288586100
+    }
+  }, {
+    "id" : "q05",
+    "query" : "handleItem0035",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24200,
+      "vectorNanos" : 270387000,
+      "keywordAndFusionNanos" : 543100,
+      "totalNanos" : 272435600
+    }
+  }, {
+    "id" : "q06",
+    "query" : "handleItem0042",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 37600,
+      "vectorNanos" : 257391400,
+      "keywordAndFusionNanos" : 588200,
+      "totalNanos" : 259433100
+    }
+  }, {
+    "id" : "q07",
+    "query" : "handleItem0049",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0016.java", "src/Item0049.java", "src/Item0115.java", "src/Item0148.java", "src/Item0214.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28000,
+      "vectorNanos" : 276878500,
+      "keywordAndFusionNanos" : 516500,
+      "totalNanos" : 280026700
+    }
+  }, {
+    "id" : "q08",
+    "query" : "handleItem0056",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 35400,
+      "vectorNanos" : 301854800,
+      "keywordAndFusionNanos" : 449400,
+      "totalNanos" : 303856300
+    }
+  }, {
+    "id" : "q09",
+    "query" : "handleItem0063",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 18000,
+      "vectorNanos" : 285626000,
+      "keywordAndFusionNanos" : 431000,
+      "totalNanos" : 287381500
+    }
+  }, {
+    "id" : "q10",
+    "query" : "handleItem0070",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0070.java", "src/Item0034.java", "src/Item0067.java", "src/Item0125.java", "src/Item0158.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23200,
+      "vectorNanos" : 255748200,
+      "keywordAndFusionNanos" : 408800,
+      "totalNanos" : 257403800
+    }
+  }, {
+    "id" : "q11",
+    "query" : "handleItem0077",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0011.java", "src/Item0044.java", "src/Item0077.java", "src/Item0110.java", "src/Item0143.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 31100,
+      "vectorNanos" : 261404000,
+      "keywordAndFusionNanos" : 450600,
+      "totalNanos" : 263506900
+    }
+  }, {
+    "id" : "q12",
+    "query" : "handleItem0084",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0051.java", "src/Item0084.java", "src/Item0150.java", "src/Item0183.java", "src/Item0282.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19800,
+      "vectorNanos" : 261181800,
+      "keywordAndFusionNanos" : 611800,
+      "totalNanos" : 263057300
+    }
+  }, {
+    "id" : "q13",
+    "query" : "handleItem0091",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0190.java", "src/Item0091.java", "src/Item0022.java", "src/Item0055.java", "src/Item0088.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 20200,
+      "vectorNanos" : 284371000,
+      "keywordAndFusionNanos" : 403800,
+      "totalNanos" : 286085300
+    }
+  }, {
+    "id" : "q14",
+    "query" : "handleItem0098",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0032.java", "src/Item0065.java", "src/Item0098.java", "src/Item0131.java", "src/Item0164.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30800,
+      "vectorNanos" : 315204200,
+      "keywordAndFusionNanos" : 445900,
+      "totalNanos" : 317409800
+    }
+  }, {
+    "id" : "q15",
+    "query" : "handleItem0105",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21500,
+      "vectorNanos" : 266832100,
+      "keywordAndFusionNanos" : 577600,
+      "totalNanos" : 268663400
+    }
+  }, {
+    "id" : "q16",
+    "query" : "handleItem0112",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java", "src/Item0145.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30800,
+      "vectorNanos" : 263191100,
+      "keywordAndFusionNanos" : 419100,
+      "totalNanos" : 265411700
+    }
+  }, {
+    "id" : "q17",
+    "query" : "handleItem0119",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0119.java", "src/Item0218.java", "src/Item0317.java", "src/Item0416.java", "src/Item0449.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 42800,
+      "vectorNanos" : 266760300,
+      "keywordAndFusionNanos" : 432700,
+      "totalNanos" : 269636300
+    }
+  }, {
+    "id" : "q18",
+    "query" : "handleItem0126",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0027.java", "src/Item0126.java", "src/Item0159.java", "src/Item0225.java", "src/Item0258.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 21300,
+      "vectorNanos" : 256016500,
+      "keywordAndFusionNanos" : 435600,
+      "totalNanos" : 257646400
+    }
+  }, {
+    "id" : "q19",
+    "query" : "handleItem0133",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0034.java", "src/Item0067.java", "src/Item0001.java", "src/Item0100.java", "src/Item0133.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19300,
+      "vectorNanos" : 254498000,
+      "keywordAndFusionNanos" : 466600,
+      "totalNanos" : 256374400
+    }
+  }, {
+    "id" : "q20",
+    "query" : "handleItem0140",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0041.java", "src/Item0074.java", "src/Item0140.java", "src/Item0173.java", "src/Item0272.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23800,
+      "vectorNanos" : 263758800,
+      "keywordAndFusionNanos" : 810600,
+      "totalNanos" : 266038100
+    }
+  }, {
+    "id" : "q21",
+    "query" : "handleItem0147",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0015.java", "src/Item0048.java", "src/Item0114.java", "src/Item0147.java", "src/Item0213.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33400,
+      "vectorNanos" : 279258600,
+      "keywordAndFusionNanos" : 602500,
+      "totalNanos" : 281576800
+    }
+  }, {
+    "id" : "q22",
+    "query" : "handleItem0154",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0022.java", "src/Item0055.java", "src/Item0088.java", "src/Item0121.java", "src/Item0154.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28600,
+      "vectorNanos" : 288432600,
+      "keywordAndFusionNanos" : 471200,
+      "totalNanos" : 291621500
+    }
+  }, {
+    "id" : "q23",
+    "query" : "handleItem0161",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0062.java", "src/Item0095.java", "src/Item0161.java", "src/Item0194.java", "src/Item0260.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23700,
+      "vectorNanos" : 292474200,
+      "keywordAndFusionNanos" : 476700,
+      "totalNanos" : 294319700
+    }
+  }, {
+    "id" : "q24",
+    "query" : "handleItem0168",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0003.java", "src/Item0036.java", "src/Item0069.java", "src/Item0102.java", "src/Item0135.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 19300,
+      "vectorNanos" : 285826300,
+      "keywordAndFusionNanos" : 462600,
+      "totalNanos" : 287773400
+    }
+  }, {
+    "id" : "q25",
+    "query" : "handleItem0175",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0010.java", "src/Item0043.java", "src/Item0076.java", "src/Item0142.java", "src/Item0175.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23600,
+      "vectorNanos" : 357225300,
+      "keywordAndFusionNanos" : 871000,
+      "totalNanos" : 359451700
+    }
+  }, {
+    "id" : "q26",
+    "query" : "handleItem0182",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0050.java", "src/Item0083.java", "src/Item0182.java", "src/Item0281.java", "src/Item0380.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 30000,
+      "vectorNanos" : 325009700,
+      "keywordAndFusionNanos" : 617200,
+      "totalNanos" : 327188500
+    }
+  }, {
+    "id" : "q27",
+    "query" : "handleItem0189",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0024.java", "src/Item0057.java", "src/Item0123.java", "src/Item0156.java", "src/Item0189.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23100,
+      "vectorNanos" : 294437000,
+      "keywordAndFusionNanos" : 637100,
+      "totalNanos" : 296574500
+    }
+  }, {
+    "id" : "q28",
+    "query" : "handleItem0196",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0031.java", "src/Item0064.java", "src/Item0097.java", "src/Item0130.java", "src/Item0163.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 57200,
+      "vectorNanos" : 306759600,
+      "keywordAndFusionNanos" : 497800,
+      "totalNanos" : 309198600
+    }
+  }, {
+    "id" : "q29",
+    "query" : "handleItem0203",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0005.java", "src/Item0038.java", "src/Item0104.java", "src/Item0137.java", "src/Item0203.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 23100,
+      "vectorNanos" : 298122400,
+      "keywordAndFusionNanos" : 841800,
+      "totalNanos" : 300282800
+    }
+  }, {
+    "id" : "q30",
+    "query" : "handleItem0210",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0012.java", "src/Item0045.java", "src/Item0078.java", "src/Item0111.java", "src/Item0144.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29400,
+      "vectorNanos" : 284234000,
+      "keywordAndFusionNanos" : 517100,
+      "totalNanos" : 286297900
+    }
+  }, {
+    "id" : "q31",
+    "query" : "handleItem0217",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0019.java", "src/Item0118.java", "src/Item0217.java", "src/Item0316.java", "src/Item0349.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 25200,
+      "vectorNanos" : 304152200,
+      "keywordAndFusionNanos" : 424400,
+      "totalNanos" : 306016900
+    }
+  }, {
+    "id" : "q32",
+    "query" : "handleItem0224",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0026.java", "src/Item0059.java", "src/Item0125.java", "src/Item0158.java", "src/Item0224.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28600,
+      "vectorNanos" : 315145800,
+      "keywordAndFusionNanos" : 469400,
+      "totalNanos" : 316997400
+    }
+  }, {
+    "id" : "q33",
+    "query" : "handleItem0231",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0000.java", "src/Item0033.java", "src/Item0066.java", "src/Item0099.java", "src/Item0132.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33300,
+      "vectorNanos" : 311453300,
+      "keywordAndFusionNanos" : 456700,
+      "totalNanos" : 313603400
+    }
+  }, {
+    "id" : "q34",
+    "query" : "handleItem0238",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0007.java", "src/Item0106.java", "src/Item0139.java", "src/Item0205.java", "src/Item0238.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 18200,
+      "vectorNanos" : 282445900,
+      "keywordAndFusionNanos" : 607200,
+      "totalNanos" : 284336100
+    }
+  }, {
+    "id" : "q35",
+    "query" : "handleItem0245",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0014.java", "src/Item0047.java", "src/Item0113.java", "src/Item0146.java", "src/Item0179.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 24800,
+      "vectorNanos" : 328876700,
+      "keywordAndFusionNanos" : 612000,
+      "totalNanos" : 330931800
+    }
+  }, {
+    "id" : "q36",
+    "query" : "handleItem0252",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0021.java", "src/Item0054.java", "src/Item0087.java", "src/Item0120.java", "src/Item0153.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 22100,
+      "vectorNanos" : 300097400,
+      "keywordAndFusionNanos" : 510100,
+      "totalNanos" : 301966500
+    }
+  }, {
+    "id" : "q37",
+    "query" : "handleItem0259",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0028.java", "src/Item0127.java", "src/Item0226.java", "src/Item0259.java", "src/Item0325.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.25,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 32100,
+      "vectorNanos" : 330415500,
+      "keywordAndFusionNanos" : 665500,
+      "totalNanos" : 333183000
+    }
+  }, {
+    "id" : "q38",
+    "query" : "handleItem0266",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0002.java", "src/Item0035.java", "src/Item0068.java", "src/Item0101.java", "src/Item0134.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 49900,
+      "vectorNanos" : 341321700,
+      "keywordAndFusionNanos" : 559200,
+      "totalNanos" : 344472000
+    }
+  }, {
+    "id" : "q39",
+    "query" : "handleItem0273",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0042.java", "src/Item0075.java", "src/Item0141.java", "src/Item0174.java", "src/Item0240.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 36500,
+      "vectorNanos" : 323113300,
+      "keywordAndFusionNanos" : 875000,
+      "totalNanos" : 326646300
+    }
+  }, {
+    "id" : "q40",
+    "query" : "handleItem0280",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0082.java", "src/Item0181.java", "src/Item0280.java", "src/Item0005.java", "src/Item0013.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.3333333333333333,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 35500,
+      "vectorNanos" : 399768000,
+      "keywordAndFusionNanos" : 552700,
+      "totalNanos" : 402345500
+    }
+  }, {
+    "id" : "q41",
+    "query" : "handleItem0287",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0023.java", "src/Item0056.java", "src/Item0089.java", "src/Item0122.java", "src/Item0155.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28400,
+      "vectorNanos" : 477518600,
+      "keywordAndFusionNanos" : 550800,
+      "totalNanos" : 479588900
+    }
+  }, {
+    "id" : "q42",
+    "query" : "handleItem0294",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0030.java", "src/Item0063.java", "src/Item0096.java", "src/Item0162.java", "src/Item0195.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33900,
+      "vectorNanos" : 360992700,
+      "keywordAndFusionNanos" : 486100,
+      "totalNanos" : 363347900
+    }
+  }, {
+    "id" : "q43",
+    "query" : "handleItem0301",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0004.java", "src/Item0037.java", "src/Item0103.java", "src/Item0136.java", "src/Item0169.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 33800,
+      "vectorNanos" : 306268700,
+      "keywordAndFusionNanos" : 550400,
+      "totalNanos" : 308328200
+    }
+  }, {
+    "id" : "q44",
+    "query" : "handleItem0308",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0209.java", "src/Item0308.java", "src/Item0407.java", "src/Item0014.java", "src/Item0039.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.5,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28900,
+      "vectorNanos" : 363445300,
+      "keywordAndFusionNanos" : 681900,
+      "totalNanos" : 365514200
+    }
+  }, {
+    "id" : "q45",
+    "query" : "handleItem0315",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0018.java", "src/Item0117.java", "src/Item0216.java", "src/Item0249.java", "src/Item0315.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 0.2,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 29800,
+      "vectorNanos" : 342832200,
+      "keywordAndFusionNanos" : 541000,
+      "totalNanos" : 344940500
+    }
+  }, {
+    "id" : "q46",
+    "query" : "handleItem0322",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0025.java", "src/Item0058.java", "src/Item0124.java", "src/Item0157.java", "src/Item0223.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 59400,
+      "vectorNanos" : 381781000,
+      "keywordAndFusionNanos" : 461700,
+      "totalNanos" : 383816400
+    }
+  }, {
+    "id" : "q47",
+    "query" : "handleItem0329",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0329.java", "src/Item0428.java", "src/Item0002.java", "src/Item0027.java", "src/Item0030.java" ],
+    "recallAt5" : 1.0,
+    "mrrAt5" : 1.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 85300,
+      "vectorNanos" : 336002000,
+      "keywordAndFusionNanos" : 431700,
+      "totalNanos" : 338941100
+    }
+  }, {
+    "id" : "q48",
+    "query" : "handleItem0336",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0006.java", "src/Item0039.java", "src/Item0105.java", "src/Item0138.java", "src/Item0204.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 26200,
+      "vectorNanos" : 394259400,
+      "keywordAndFusionNanos" : 526400,
+      "totalNanos" : 396218400
+    }
+  }, {
+    "id" : "q49",
+    "query" : "handleItem0343",
+    "mode" : "VECTOR",
+    "phase" : "warm",
+    "repeat" : 1,
+    "hitPaths" : [ "src/Item0013.java", "src/Item0046.java", "src/Item0079.java", "src/Item0112.java", "src/Item0145.java" ],
+    "recallAt5" : 0.0,
+    "mrrAt5" : 0.0,
+    "degraded" : false,
+    "timings" : {
+      "embeddingNanos" : 28300,
+      "vectorNanos" : 347098300,
+      "keywordAndFusionNanos" : 728600,
+      "totalNanos" : 349316300
+    }
+  } ]
+}

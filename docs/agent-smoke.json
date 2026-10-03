@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "mode": "local-mock",
+  "startedAt": "2026-10-02T16:35:36.373156+00:00",
+  "finishedAt": "2026-10-02T16:38:14.820410+00:00",
+  "artifact": {
+    "name": "flowtrail.jar",
+    "sha256": "0c72a9a7263959e05f5d842c987c32f76c3f685e5a5210a86cc66c601962b337"
+  },
+  "cliInvocations": 19,
+  "checks": [
+    {
+      "name": "legacy_run",
+      "ok": true,
+      "evidence": {
+        "stepCount": 2,
+        "output": "上一阶段输出：你好，FlowTrail！"
+      },
+      "elapsedSeconds": 8.618
+    },
+    {
+      "name": "index_and_search",
+      "ok": true,
+      "evidence": {
+        "chunks": 12,
+        "model": "mock-hash-v1",
+        "sources": [
+          {
+            "path": "src/demo/OrderController.java",
+            "symbol": "OrderController#postRefund(String, String)",
+            "startLine": 7,
+            "endLine": 10
+          },
+          {
+            "path": "README.md",
+            "symbol": "README.md",
+            "startLine": 1,
+            "endLine": 13
+          },
+          {
+            "path": "src/demo/OrderService.java",
+            "symbol": "OrderService#refundOrder(String, String)",
+            "startLine": 10,
+            "endLine": 14
+          }
+        ]
+      },
+      "elapsedSeconds": 18.045
+    },
+    {
+      "name": "agent_and_cross_process_session",
+      "ok": true,
+      "evidence": {
+        "provider": "mock",
+        "tools": [
+          "read_file",
+          "search_code"
+        ],
+        "sessionProcesses": 2,
+        "persistedMessages": 9,
+        "oldAndNewGoalsRetained": true
+      },
+      "elapsedSeconds": 17.803
+    },
+    {
+      "name": "plan_workers_and_join",
+      "ok": true,
+      "evidence": {
+        "outputs": {
+          "summary": "Mock joined analysis complete.",
+          "service": "Mock service analysis evidence",
+          "controller": "Mock controller analysis evidence"
+        },
+        "attempts": 3,
+        "joinCount": 1,
+        "note": "Overlap is verified by the barrier unit test, not inferred from smoke timing."
+      },
+      "elapsedSeconds": 8.606
+    },
+    {
+      "name": "cross_process_memory",
+      "ok": true,
+      "evidence": {
+        "processes": 2,
+        "fact": "SMOKE_FACT refund example uses an in-process idempotency map.",
+        "recalled": 1
+      },
+      "elapsedSeconds": 17.584
+    },
+    {
+      "name": "write_and_command_permissions",
+      "ok": true,
+      "evidence": {
+        "deniedWriteChangedFile": false,
+        "successfulPatches": 1,
+        "ambiguousPatchChangedFile": false,
+        "unlistedCommandStatus": "denied",
+        "approvedCommandExitCode": 0,
+        "commandOutput": "openjdk version \"21.0.1\" 2023-10-17\r\nOpenJDK Runtime Environment (build 21.0.1+12-29)\r\nOpenJDK 64-Bit Server VM (build 21.0.1+12-29, mixed mode, sharing)"
+      },
+      "elapsedSeconds": 42.926
+    },
+    {
+      "name": "mcp_transports",
+      "ok": true,
+      "evidence": {
+        "mode": "local protocol fixtures",
+        "transports": [
+          {
+            "transport": "stdio",
+            "protocolVersion": "2025-11-25",
+            "tools": [
+              "fixture__record_note"
+            ],
+            "deniedSideEffects": 0,
+            "approvedSideEffects": 1,
+            "result": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Recorded: smoke-stdio"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "transport": "http",
+            "protocolVersion": "2025-11-25",
+            "tools": [
+              "fixture__record_note"
+            ],
+            "deniedSideEffects": 0,
+            "approvedSideEffects": 1,
+            "result": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Recorded: smoke-http"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "elapsedSeconds": 44.859
+    }
+  ]
+}

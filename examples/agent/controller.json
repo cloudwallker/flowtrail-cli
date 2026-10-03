@@ -1,0 +1,4 @@
+[
+  {"toolCalls":[{"id":"controller","name":"read_file","arguments":{"path":"src/demo/OrderController.java"}}]},
+  {"content":"Mock Controller 分析：postRefund 校验 orderId，并调用 service.refundOrder。来源 src/demo/OrderController.java:8。"}
+]

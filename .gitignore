@@ -43,13 +43,14 @@ superpowers/
 
 # Local development material
 **/superpowers/
-**/tests/
-**/test/
 /.github/
 /benchmarks/
 /artifacts/
 /e2e/
 /AGENTS.md
-/scripts/
 /docs/publishing.md
 /docs/verification.md
+target-*/
+.flowtrail/
+__pycache__/
+*.pyc

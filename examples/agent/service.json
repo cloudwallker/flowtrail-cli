@@ -1,0 +1,4 @@
+[
+  {"toolCalls":[{"id":"service","name":"read_file","arguments":{"path":"src/demo/OrderService.java"}}]},
+  {"content":"Mock Service 分析：refundOrder 以 requestKey 为键计算并缓存退款结果；findRefund 查询结果。来源 src/demo/OrderService.java:12。"}
+]

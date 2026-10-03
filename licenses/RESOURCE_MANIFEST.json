@@ -1,0 +1,60 @@
+{
+  "formatVersion": 1,
+  "checkedOn": "2026-10-03",
+  "resources": [
+    {
+      "component": "org.xerial:sqlite-jdbc:3.47.1.0",
+      "resource": "sqlite-jdbc-3.47.1.0/LICENSE",
+      "sourceArtifact": "org/xerial/sqlite-jdbc/3.47.1.0/sqlite-jdbc-3.47.1.0.jar",
+      "sourceEntry": "META-INF/maven/org.xerial/sqlite-jdbc/LICENSE",
+      "artifactSha256": "4164d95347aeab42b754cabb7945b93e54f29ddb2eded967dbe979b4045cb685",
+      "resourceSha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "bytes": 11560
+    },
+    {
+      "component": "org.xerial:sqlite-jdbc:3.47.1.0",
+      "resource": "sqlite-jdbc-3.47.1.0/LICENSE.zentus",
+      "sourceArtifact": "org/xerial/sqlite-jdbc/3.47.1.0/sqlite-jdbc-3.47.1.0.jar",
+      "sourceEntry": "META-INF/maven/org.xerial/sqlite-jdbc/LICENSE.zentus",
+      "artifactSha256": "4164d95347aeab42b754cabb7945b93e54f29ddb2eded967dbe979b4045cb685",
+      "resourceSha256": "89167dab92289c7e5e2b65b044f0856b703d05e5d5e35c3548e73d9c7d2f5048",
+      "bytes": 1312
+    },
+    {
+      "component": "org.xerial:sqlite-jdbc:3.47.1.0",
+      "resource": "sqlite-jdbc-3.47.1.0/pom.properties",
+      "sourceArtifact": "org/xerial/sqlite-jdbc/3.47.1.0/sqlite-jdbc-3.47.1.0.jar",
+      "sourceEntry": "META-INF/maven/org.xerial/sqlite-jdbc/pom.properties",
+      "artifactSha256": "4164d95347aeab42b754cabb7945b93e54f29ddb2eded967dbe979b4045cb685",
+      "resourceSha256": "c787b20a87969c998a3a19b48848fa79942ddca7dd57958e9245f6dc528e398c",
+      "bytes": 59
+    },
+    {
+      "component": "com.github.javaparser:javaparser-core:3.26.3",
+      "resource": "javaparser-core-3.26.3/upstream-pom.xml",
+      "sourceArtifact": "com/github/javaparser/javaparser-core/3.26.3/javaparser-core-3.26.3.jar",
+      "sourceEntry": "META-INF/maven/com.github.javaparser/javaparser-core/pom.xml",
+      "artifactSha256": "a24c4fa7799ffe0c7a9af11d4eecd757098ed4498f86067bf28b46b2bfea1833",
+      "resourceSha256": "6625e349778b3c3100268a6093abf44472e5e9661ef399c33478d8771f8582ed",
+      "bytes": 4885
+    },
+    {
+      "component": "com.github.javaparser:javaparser-core:3.26.3",
+      "resource": "javaparser-core-3.26.3/pom.properties",
+      "sourceArtifact": "com/github/javaparser/javaparser-core/3.26.3/javaparser-core-3.26.3.jar",
+      "sourceEntry": "META-INF/maven/com.github.javaparser/javaparser-core/pom.properties",
+      "artifactSha256": "a24c4fa7799ffe0c7a9af11d4eecd757098ed4498f86067bf28b46b2bfea1833",
+      "resourceSha256": "c157c52e3cddd2f09d68e33db9cfc5e7bd64ee7a13abd8b09917f625ed3d62bd",
+      "bytes": 75
+    },
+    {
+      "component": "com.github.javaparser:javaparser-core:3.26.3",
+      "resource": "javaparser-core-3.26.3/LICENSE-APACHE-2.0.txt",
+      "sourceArtifact": "org/xerial/sqlite-jdbc/3.47.1.0/sqlite-jdbc-3.47.1.0.jar",
+      "sourceEntry": "META-INF/maven/org.xerial/sqlite-jdbc/LICENSE",
+      "artifactSha256": "4164d95347aeab42b754cabb7945b93e54f29ddb2eded967dbe979b4045cb685",
+      "resourceSha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "bytes": 11560
+    }
+  ]
+}

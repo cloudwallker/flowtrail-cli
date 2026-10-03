@@ -1,0 +1,3 @@
+[
+  {"content":"Mock 汇总：Controller 校验入口参数，Service 用 requestKey 提供进程内幂等。工程扩展可加入请求摘要冲突校验和持久化，不能将当前内存实现描述为跨进程幂等。"}
+]
