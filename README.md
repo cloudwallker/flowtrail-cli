@@ -20,6 +20,8 @@ English | [中文](README_ZH.md)
 - **MCP tools:** stdio and Streamable HTTP clients with namespaced discovery, schema checks, explicit approval, cancellation, and resource cleanup.
 - **Repeatable tasks:** the original `run` command validates and executes JSON text/HTTP steps in order, with stable JSON output and exit codes.
 
+MCP schema `minLength` and `maxLength` count Unicode code points, so a supplementary character such as an emoji counts once.
+
 ## Quick Start
 
 Building from source requires **JDK 21+ and Maven 3.8.5+**. Check that both `java -version` and `mvn -version` use a suitable JDK; set `JAVA_HOME` when needed.

@@ -72,10 +72,12 @@ public final class SchemaValidator {
         throw new IllegalArgumentException();
       if (schema.has("items")) for (JsonNode item : value) validate(schema.get("items"), item);
     }
-    if (value.isTextual()
-        && (value.asText().length() < schema.path("minLength").asInt(0)
-            || value.asText().length() > schema.path("maxLength").asInt(65536)))
-      throw new IllegalArgumentException();
+    if (value.isTextual()) {
+      String text = value.asText();
+      int length = text.codePointCount(0, text.length());
+      if (length < schema.path("minLength").asInt(0)
+          || length > schema.path("maxLength").asInt(65536)) throw new IllegalArgumentException();
+    }
     if (value.isNumber()
         && (schema.has("minimum") && value.asDouble() < schema.get("minimum").asDouble()
             || schema.has("maximum") && value.asDouble() > schema.get("maximum").asDouble()))

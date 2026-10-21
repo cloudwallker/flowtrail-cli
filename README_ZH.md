@@ -18,6 +18,8 @@ Windows 可双击根目录 `start.bat`：自动查找 Java 21+。通过菜单运
 
 默认 Agent 与 Embedding 演示采用显式 `mock`；项目状态自动保存到项目内 SQLite。旧任务示例离线运行，HTTP 和 MCP 示例提供本地服务。
 
+MCP Schema 的 `minLength` 和 `maxLength` 按 Unicode 码点计数，emoji 等补充平面字符按一个字符计算。
+
 ```text
 $ flowtrail run examples/hello.json
 [greeting] 你好，FlowTrail！
